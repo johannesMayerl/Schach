@@ -124,10 +124,10 @@ public class Archive extends JPanel {
 
 	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		if (screenSize.getWidth() <= 1920 && screenSize.getHeight() <= 1080) {
-			listScrollPane.setPreferredSize(new Dimension(1200, 500));
+			listScrollPane.setPreferredSize(new Dimension(900, 500));
 			list.setFont(new Font("Century", Font.BOLD, 35));
 		} else{
-			listScrollPane.setPreferredSize(new Dimension(2400, 1000));
+			listScrollPane.setPreferredSize(new Dimension(2000, 1000));
 			list.setFont(new Font("Century", Font.BOLD, 55));
 		}
 

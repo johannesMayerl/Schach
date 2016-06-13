@@ -332,8 +332,7 @@ public class MainGame extends JPanel {
 			public void run() {
 				try {
 					Clip clip = AudioSystem.getClip();
-					AudioInputStream inputStream = AudioSystem
-							.getAudioInputStream(new File("sounds/MainMenu_Hover_Click.wav"));
+					AudioInputStream inputStream = AudioSystem.getAudioInputStream(new File("sounds/MainMenu_Hover_Click.wav"));
 					clip.open(inputStream);
 					clip.start();
 				} catch (Exception e) {

@@ -29,6 +29,10 @@ public class MainMenuListeners implements ActionListener {
 			panel.toggleSettings();
 		} else if (source == panel.getNewGame()) {
 			panel.toggleMainGame();
+			panel.getFrame().getPanel4().getGame().getBoard().putPiecesOnStart();
+			panel.getFrame().getBridge().updateField();
+		} else if (source == panel.getCotinue()) {
+			panel.toggleMainGame();
 			panel.getFrame().getBridge().updateField();
 		}
 

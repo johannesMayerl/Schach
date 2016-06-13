@@ -478,6 +478,13 @@ public class PlayField {
     }
 
     public void putPiecesOnStart() {
+
+        for (int i = 0; i < actPosition.length; i++) {
+            for (int j = 0; j < actPosition[i].length; j++) {
+                actPosition[i][j] = null;
+            }
+        }
+
         // Pawn_black
         actPosition[0][1] = new Pawn(false, "a7", false);
         actPosition[1][1] = new Pawn(false, "b7", false);

@@ -123,12 +123,16 @@ public class BridgeFromFrontEndToBackEnd {
 
 		frame.getPanel4().repaint();
 
+
+		String nextPos = toChessNotation(p);
+
 		try {
-			frame.getPanel4().getGame().getBoard().setActPosition(p.getyValue(), p.getxValue(),
-					frame.getPanel4().getCurrentFigure());
+			frame.getPanel4().getGame().getBoard().move( nextPos,frame.getPanel4().getCurrentFigure());
 			frame.getPanel4().getCurrentFigure().setActPos(toChessNotation(p));
 		} catch (FieldException e) {
 			System.out.println("Derp");
+		} catch (PositionException e) {
+			e.printStackTrace();
 		}
 	}
 
@@ -221,8 +225,9 @@ public class BridgeFromFrontEndToBackEnd {
 
 				boolean isPossible = false;
 				try {
-					isPossible = cp.move(endPos, frame.getPanel4().getGame().getBoard(), cp);
-				} catch (ChessPieceException | FieldException | PositionException e1) {
+					//isPossible = cp.move(endPos, frame.getPanel4().getGame().getBoard(), cp);
+					isPossible = frame.getPanel4().getGame().getBoard().validMove(endPos, cp);
+				} catch (/*ChessPieceException |*/ FieldException | PositionException e1) {
 					e1.printStackTrace();
 				}
 

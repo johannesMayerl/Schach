@@ -59,9 +59,14 @@ public class MainGameListeners implements ActionListener, MouseListener {
 			String endPos = bridge.toChessNotation(p);
 
 			boolean isPossible = false;
+
+			//new method called 'validMove' in playfield class --> checks if move is possible
 			try {
-				isPossible = cp.move(endPos, panel.getGame().getBoard(), cp);
-			} catch (ChessPieceException | FieldException | PositionException e1) {
+				//isPossible = cp.move(endPos, panel.getGame().getBoard(), cp);
+
+				//new version
+				isPossible = panel.getGame().getBoard().validMove(endPos, cp);
+			} catch (/*ChessPieceException |*/ FieldException | PositionException e1) {
 				e1.printStackTrace();
 			}
 

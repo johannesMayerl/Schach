@@ -132,7 +132,7 @@ public class BridgeFromFrontEndToBackEnd {
 			frame.getPanel4().getGame().getBoard().move( nextPos,frame.getPanel4().getCurrentFigure());
 			frame.getPanel4().getCurrentFigure().setActPos(toChessNotation(p));
 		} catch (FieldException e) {
-			System.out.println("Derp");
+			System.out.println("Move didn't work");
 		} catch (PositionException e) {
 			e.printStackTrace();
 		}

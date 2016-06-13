@@ -4,9 +4,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * 
  * JTextFieldListener
- *
  */
 public class MainMenuListeners implements ActionListener {
 
@@ -18,7 +16,6 @@ public class MainMenuListeners implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
 		Object source = e.getSource();
 
 		if (source == panel.getExit()) {
@@ -35,6 +32,5 @@ public class MainMenuListeners implements ActionListener {
 			panel.toggleMainGame();
 			panel.getFrame().getBridge().updateField();
 		}
-
 	}
 }

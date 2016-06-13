@@ -518,7 +518,7 @@ public class PlayField {
                 System.out.println("xStart > xEnd && yStart > yEnd");
                 int i = xStart - 1;
                 int j = yStart - 1;
-                while (i >= xEnd + 1 && j >= yEnd + 1) {
+                while (i > xEnd + 1 && j >= yEnd + 1) {
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;

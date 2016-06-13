@@ -74,6 +74,7 @@ public class MainGameListeners implements ActionListener, MouseListener {
 				bridge.validField(p);
 				panel.setCurrentFigure(null);
 				panel.setCurrentField(null);
+				panel.getFrame().getBridge().updateField();
 			} else {
 				bridge.playUnsucssefullSound();
 				panel.setCurrentFigure(null);

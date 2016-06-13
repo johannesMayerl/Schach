@@ -53,25 +53,25 @@ public class BridgeFromFrontEndToBackEnd {
 	public String toChessNotation(Position p) {
 		String chessNotation = "";
 
-		if (p.getyValue() == 0) {
+		if (p.getxValue() == 0) {
 			chessNotation += "a";
-		} else if (p.getyValue() == 1) {
+		} else if (p.getxValue() == 1) {
 			chessNotation += "b";
-		} else if (p.getyValue() == 2) {
+		} else if (p.getxValue() == 2) {
 			chessNotation += "c";
-		} else if (p.getyValue() == 3) {
+		} else if (p.getxValue() == 3) {
 			chessNotation += "d";
-		} else if (p.getyValue() == 4) {
+		} else if (p.getxValue() == 4) {
 			chessNotation += "e";
-		} else if (p.getyValue() == 5) {
+		} else if (p.getxValue() == 5) {
 			chessNotation += "f";
-		} else if (p.getyValue() == 6) {
+		} else if (p.getxValue() == 6) {
 			chessNotation += "g";
-		} else if (p.getyValue() == 7) {
+		} else if (p.getxValue() == 7) {
 			chessNotation += "h";
 		}
 
-		int temp = 8 - p.getxValue();
+		int temp = 8 - p.getyValue();
 
 		chessNotation += temp;
 		return chessNotation;

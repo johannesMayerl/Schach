@@ -4,7 +4,6 @@
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/PlayField.class" afterPath="$PROJECT_DIR$/bin/model/PlayField.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/PlayField.java" afterPath="$PROJECT_DIR$/src/model/PlayField.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -649,7 +648,7 @@
       <workItem from="1465799820883" duration="1855000" />
       <workItem from="1465801699148" duration="12760000" />
       <workItem from="1465828034554" duration="1509000" />
-      <workItem from="1465835990024" duration="7074000" />
+      <workItem from="1465835990024" duration="7377000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -770,11 +769,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465841793777</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Field works">
+      <created>1465843098017</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1465843098017</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23790000" />
+    <option name="totallyTimeSpent" value="24093000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

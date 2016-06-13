@@ -71,7 +71,6 @@ public class MainGame extends JPanel {
 		gbc.gridx = 1;
 		gbc.gridy = 2;
 		add(createBack(), gbc);
-
 	}
 
 	public ChessGame getGame() {
@@ -235,7 +234,7 @@ public class MainGame extends JPanel {
 							centerBoard.add(b);
 							field[i][j] = b;
 						} else if (i == 6) {
-							WhiteField b = new WhiteField("./textures/MainGame/Pawn_White_WhiteField.png");
+							WhiteField b = new WhiteField("./textures/MainGame/Knight_White_WhiteField.png");
 							b.addActionListener(listener);
 							b.addMouseListener(listener);
 							centerBoard.add(b);
@@ -330,7 +329,6 @@ public class MainGame extends JPanel {
 
 	public void playSound() {
 		new Thread(new Runnable() {
-			@Override
 			public void run() {
 				try {
 					Clip clip = AudioSystem.getClip();

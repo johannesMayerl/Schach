@@ -13,7 +13,7 @@ public class Pawn extends ChessPiece {
 
     public Pawn(boolean color, String start, boolean movedOnce) {
         super(color, start, movedOnce);
-
+        setName("Pawn");
         System.out.println("Pawn");
     }
 

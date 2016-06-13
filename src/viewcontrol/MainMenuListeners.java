@@ -29,6 +29,7 @@ public class MainMenuListeners implements ActionListener {
 			panel.toggleSettings();
 		} else if (source == panel.getNewGame()) {
 			panel.toggleMainGame();
+			panel.getFrame().getBridge().updateField();
 		}
 
 	}

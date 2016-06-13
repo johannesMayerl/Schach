@@ -13,6 +13,7 @@ public class Queen extends ChessPiece {
 
     public Queen(boolean color, String start, boolean movedOnce) {
         super(color, start, movedOnce);
+        setName("Queen");
         System.out.println("Queen");
     }
 

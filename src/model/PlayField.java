@@ -21,7 +21,7 @@ public class PlayField {
     public PlayField() {
         // initializes the array
         actPosition = new ChessPiece[8][8];
-        //putPiecesOnStart();
+        putPiecesOnStart();
         pos = new Position();
     }
 

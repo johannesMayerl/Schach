@@ -16,6 +16,9 @@ public abstract class ChessPiece {
     private boolean colour;
     private boolean movedOnce;
 
+    //name
+    private String name;
+
     // like "g5"
     private String actPosition;
 
@@ -52,6 +55,14 @@ public abstract class ChessPiece {
 
     public void setMovedOnce(boolean movedOnce) {
         this.movedOnce = movedOnce;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

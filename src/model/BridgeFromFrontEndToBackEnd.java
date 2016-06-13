@@ -14,8 +14,10 @@ import chessPieces.ChessPiece;
 import exceptions.ChessPieceException;
 import exceptions.FieldException;
 import exceptions.PositionException;
+import viewcontrol.BlackField;
 import viewcontrol.FieldWrapper;
 import viewcontrol.Frame;
+import viewcontrol.WhiteField;
 
 public class BridgeFromFrontEndToBackEnd {
 
@@ -240,7 +242,153 @@ public class BridgeFromFrontEndToBackEnd {
 				}
 			}
 		}
-
 	}
+
+	public void updateField(){
+		ChessPiece [][] logicField = frame.getPanel4().getGame().getBoard().getField();
+		FieldWrapper [][] guiField = frame.getPanel4().getField();
+
+		for(int i = 0; i < logicField.length; i++){
+			for(int j = 0; j < logicField[i].length; j++){
+                //Reference for field color
+                ImageIcon img = (ImageIcon) guiField[i][j].getIcon();
+                String path = img.getDescription();
+                //if true -> black
+
+                if(logicField[i][j] == null){
+                    if(path.contains("BlackField")){
+                        guiField[i][j].setIcon(new BlackField().getIcon());
+                        System.out.println(i+" "+j+" "+guiField[i][j].toString());
+                    }else{
+                        guiField[i][j].setIcon(new WhiteField().getIcon());
+                        System.out.println(i+" "+j+" "+guiField[i][j].toString());
+                    }
+
+                    continue;
+                }
+
+				if (logicField[i][j].getColour()){
+					//black
+                    switch (logicField[i][j].getName()){
+						case "Pawn":
+							if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Pawn_Black_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+							}else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Pawn_Black_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+							break;
+						case "Knight":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Knight_Black_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Knight_Black_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+							break;
+						case "Bishop":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Bishop_Black_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Bishop_Black_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+							break;
+                        case "Rook":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Rook_Black_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Rook_Black_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+							break;
+						case "King":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/King_Black_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/King_Black_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+							break;
+						case "Queen":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Queen_Black_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Queen_Black_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+							break;
+					}
+				}else{
+                    //white
+                    switch (logicField[i][j].getName()){
+                        case "Pawn":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Pawn_White_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Pawn_White_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+                            break;
+                        case "Knight":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Knight_White_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Knight_White_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+                            break;
+                        case "Bishop":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Bishop_White_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Bishop_White_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+                            break;
+                        case "Rook":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Rook_White_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Rook_White_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+                            break;
+                        case "King":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/King_White_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/King_White_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+                            break;
+                        case "Queen":
+                            if(path.contains("BlackField")){
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Queen_White_BlackField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }else{
+                                guiField[i][j].setIcon(new BlackField("./textures/MainGame/Queen_White_WhiteField.png").getIcon());
+                                System.out.println(guiField[i][j].toString());
+                            }
+                            break;
+                    }
+				}
+			}
+		}
+
+        frame.getPanel4().repaint();
+	}
+
 
 }

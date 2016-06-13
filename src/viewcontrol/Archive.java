@@ -122,16 +122,15 @@ public class Archive extends JPanel {
 		listScrollPane = new JScrollPane();
 		listScrollPane.getViewport().setView(list);
 
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-		if (screenSize.getWidth() < 1920 && screenSize.getHeight() < 1080) {
+	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		if (screenSize.getWidth() <= 1920 && screenSize.getHeight() <= 1080) {
 			listScrollPane.setPreferredSize(new Dimension(1200, 500));
 			list.setFont(new Font("Century", Font.BOLD, 35));
-		} else {
-			listScrollPane.setPreferredSize(new Dimension(2000, 1000));
+		} else{
+			listScrollPane.setPreferredSize(new Dimension(2400, 1000));
 			list.setFont(new Font("Century", Font.BOLD, 55));
 		}
 
-		listScrollPane.setBorder(BorderFactory.createLineBorder(Color.WHITE));
 		listScrollPane.setOpaque(false);
 		listScrollPane.getViewport().setOpaque(false);
 

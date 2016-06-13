@@ -218,7 +218,6 @@ public class Archive extends JPanel {
 
 	public void playSound() {
 		new Thread(new Runnable() {
-			@Override
 			public void run() {
 				try {
 					Clip clip = AudioSystem.getClip();

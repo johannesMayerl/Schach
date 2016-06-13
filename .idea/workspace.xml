@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/King.class" afterPath="$PROJECT_DIR$/bin/chessPieces/King.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Knight.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Knight.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Pawn.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Pawn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/PlayField.class" afterPath="$PROJECT_DIR$/bin/model/PlayField.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/PlayField.java" afterPath="$PROJECT_DIR$/src/model/PlayField.java" />
     </list>
@@ -33,13 +29,13 @@
       <file leaf-file-name="PlayField.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
-              <caret line="519" column="31" selection-start-line="519" selection-start-column="31" selection-end-line="519" selection-end-column="31" />
+            <state relative-caret-position="440">
+              <caret line="573" column="44" selection-start-line="573" selection-start-column="40" selection-end-line="573" selection-end-column="44" />
               <folding>
-                <element signature="e#34691#34692#0" expanded="true" />
-                <element signature="e#34725#34726#0" expanded="true" />
-                <element signature="e#34780#34781#0" expanded="true" />
-                <element signature="e#34826#34827#0" expanded="true" />
+                <element signature="e#34730#34731#0" expanded="true" />
+                <element signature="e#34764#34765#0" expanded="true" />
+                <element signature="e#34819#34820#0" expanded="true" />
+                <element signature="e#34865#34866#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -652,7 +648,7 @@
       <workItem from="1465799820883" duration="1855000" />
       <workItem from="1465801699148" duration="12760000" />
       <workItem from="1465828034554" duration="1509000" />
-      <workItem from="1465835990024" duration="3858000" />
+      <workItem from="1465835990024" duration="5774000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -759,11 +755,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465838785581</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Field works">
+      <created>1465839872362</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1465839872362</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20574000" />
+    <option name="totallyTimeSpent" value="22490000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,10 +786,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16930023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5171674" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.020316027" sideWeight="0.52360517" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03047404" sideWeight="0.48497853" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4828326" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.020316027" sideWeight="0.47639486" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -845,10 +848,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#34691#34692#0" expanded="true" />
-            <element signature="e#34725#34726#0" expanded="true" />
-            <element signature="e#34780#34781#0" expanded="true" />
-            <element signature="e#34826#34827#0" expanded="true" />
+            <element signature="e#34730#34731#0" expanded="true" />
+            <element signature="e#34764#34765#0" expanded="true" />
+            <element signature="e#34819#34820#0" expanded="true" />
+            <element signature="e#34865#34866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -868,10 +871,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#34691#34692#0" expanded="true" />
-            <element signature="e#34725#34726#0" expanded="true" />
-            <element signature="e#34780#34781#0" expanded="true" />
-            <element signature="e#34826#34827#0" expanded="true" />
+            <element signature="e#34730#34731#0" expanded="true" />
+            <element signature="e#34764#34765#0" expanded="true" />
+            <element signature="e#34819#34820#0" expanded="true" />
+            <element signature="e#34865#34866#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1146,13 +1149,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="519" column="31" selection-start-line="519" selection-start-column="31" selection-end-line="519" selection-end-column="31" />
+        <state relative-caret-position="440">
+          <caret line="573" column="44" selection-start-line="573" selection-start-column="40" selection-end-line="573" selection-end-column="44" />
           <folding>
-            <element signature="e#34691#34692#0" expanded="true" />
-            <element signature="e#34725#34726#0" expanded="true" />
-            <element signature="e#34780#34781#0" expanded="true" />
-            <element signature="e#34826#34827#0" expanded="true" />
+            <element signature="e#34730#34731#0" expanded="true" />
+            <element signature="e#34764#34765#0" expanded="true" />
+            <element signature="e#34819#34820#0" expanded="true" />
+            <element signature="e#34865#34866#0" expanded="true" />
           </folding>
         </state>
       </provider>

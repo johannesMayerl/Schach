@@ -514,11 +514,12 @@ public class PlayField {
                 }
                 return true;
             } else if (xStart > xEnd && yStart > yEnd) {
-                // to the top and to the left __CHECKED (theoretically)
+
                 System.out.println("xStart > xEnd && yStart > yEnd");
                 int i = xStart - 1;
                 int j = yStart - 1;
                 while (i > xEnd + 1 && j >= yEnd + 1) {
+                    System.out.println("First While loop: xStart > xEnd && yStart > yEnd");
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
@@ -530,11 +531,12 @@ public class PlayField {
                 }
                 return true;
             } else if (yStart > yEnd && xStart < xEnd) {
-                // to the right and to the top __CHECKED (theoretically)
+
                 System.out.println("xStart > xEnd && yStart < yEnd");
                 int i = xStart + 1;
                 int j = yStart - 1;
                 while (i <= xEnd - 1 && j >= yEnd + 1) {
+                    System.out.println("Second While loop: xStart > xEnd && yStart < yEnd");
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
@@ -546,11 +548,13 @@ public class PlayField {
                 }
                 return true;
             } else if (xStart < xEnd && yStart < yEnd) {
-                // to the bottom and to the right __CHECKED (theoretically)
+
                 System.out.println("xStart < xEnd && yStart < yEnd");
                 int i = xStart + 1;
                 int j = yStart + 1;
+                //problem
                 while (i <= xEnd - 1 && j >= yEnd - 1) {
+
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
@@ -562,11 +566,13 @@ public class PlayField {
                 }
                 return true;
             } else if (yStart < yEnd && xStart > xEnd) {
-                // to the bottom and to the left __CHECKED (theoretically)
+
                 System.out.println("xStart < xEnd && yStart > yEnd");
                 int i = xStart - 1;
                 int j = yStart + 1;
+                //problem
                 while (i >= xEnd + 1 && j >= yEnd - 1) {
+                    System.out.println("Fourth While loop: xStart < xEnd && yStart > yEnd");
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;

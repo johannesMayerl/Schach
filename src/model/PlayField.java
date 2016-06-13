@@ -311,6 +311,7 @@ public class PlayField {
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                             piece.setMovedOnce(true);
+                                            setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
@@ -321,6 +322,7 @@ public class PlayField {
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                             piece.setMovedOnce(true);
+                                            setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
@@ -335,6 +337,7 @@ public class PlayField {
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                             piece.setMovedOnce(true);
+                                            setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
@@ -346,6 +349,7 @@ public class PlayField {
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                             piece.setMovedOnce(true);
+                                            setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
@@ -359,6 +363,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -371,6 +376,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -383,6 +389,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -395,6 +402,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;

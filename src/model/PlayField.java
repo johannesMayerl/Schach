@@ -553,7 +553,7 @@ public class PlayField {
                 int i = xStart + 1;
                 int j = yStart + 1;
                 //problem
-                while (i <= xEnd - 1 && j >= yEnd - 1) {
+                while (i < xEnd  && j < yEnd ) {
 
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");
@@ -570,8 +570,8 @@ public class PlayField {
                 System.out.println("xStart < xEnd && yStart > yEnd");
                 int i = xStart - 1;
                 int j = yStart + 1;
-                //problem
-                while (i >= xEnd + 1 && j >= yEnd - 1) {
+
+                while (i > xEnd  && j < yEnd ) {
                     System.out.println("Fourth While loop: xStart < xEnd && yStart > yEnd");
                     if (actPosition[i][j] != null) {
                         System.out.println("X: " + i + "Y: " + j + " is occupied");

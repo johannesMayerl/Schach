@@ -12,66 +12,50 @@ import model.Position;
 
 public abstract class ChessPiece {
 
-    //true for black an false for white
-    private boolean available;
+    // true for black an false for white
+    private boolean colour;
+    private boolean movedOnce;
 
-    //like "g5"
-    private String startPos;
-    private Position posXY;
+    // like "g5"
+    private String actPosition;
 
-    public ChessPiece(boolean available, String startPos) {
+    public ChessPiece(boolean color, String actPosition, boolean movedOnce) {
         super();
-        this.available = available;
-        this.startPos = startPos;
-        posXY = new Position();
+        this.colour = color;
+        this.actPosition = actPosition;
+        setMovedOnce(movedOnce);
     }
 
-    public boolean move(String endPos, PlayField field, ChessPiece piece) throws ChessPieceException, FieldException, PositionException {
-        int toX;
-        int toY;
-        int fromX;
-        int fromY;
+    public boolean getColour() {
 
-        if(endPos != null && piece != null) {
-            toX = posXY.xValue(endPos);
-            toY = posXY.yValue(endPos);
-            fromX = posXY.xValue(field.getActPositionOf(piece));
-            fromY = posXY.yValue(field.getActPositionOf(piece));
-        } else throw new ChessPieceException("Check if the endPos String or and the ChessPiece Piece is not null! Exception thrown in ChessPiece class");
-
-        if(fromX == toX || fromY == toY)
-            return false;
-        else if(toX > 8 || toX < 1 || fromX > 8 || fromX < 1 || toY < 1 || toY > 8 || fromY > 8 || fromY < 1)
-            return false;
-        else
-            return true;
+        return colour;
     }
 
-    public boolean getAvailable() {
+    public void setColour(boolean color) {
 
-        return available;
-    }
-
-    public void setAvailable(boolean color) {
-
-        this.available = color;
+        this.colour = color;
     }
 
     public String getActPos() {
-        //e3 = x=3 y=e  e = 4
-        return startPos;
+        // e3 = x=3 y=e e = 4
+        return actPosition;
     }
 
-    public void setActPos(String startPos) {
-        //e3 = x=3 y=e  e = 4
-        this.startPos = startPos;
+    public void setActPos(String actPosition) {
+        // e3 = x=3 y=e e = 4
+        this.actPosition = actPosition;
+    }
+
+    public boolean getMovedOnce() {
+        return movedOnce;
+    }
+
+    public void setMovedOnce(boolean movedOnce) {
+        this.movedOnce = movedOnce;
     }
 
     @Override
     public String toString() {
-        return "ChessPiece{" +
-                "available=" + available +
-                ", startPos='" + startPos + '\'' +
-                '}';
+        return "ChessPiece{" + "colour=" + colour + ", actPosition='" + actPosition + '\'' + '}';
     }
 }

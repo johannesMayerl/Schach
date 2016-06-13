@@ -23,7 +23,7 @@ public class ArchiveList extends JList {
 			if (screenSize.getWidth() <= 1920 && screenSize.getHeight() <= 1080) {
 				background = ImageIO.read(new File("./textures/Archive/woodenPlanks.jpg"));
 			} else {
-				background = ImageIO.read(new File("./textures/Archive/woodenPlanks_4k.jpg.png"));
+				background = ImageIO.read(new File("./textures/Archive/woodenPlanks_4k.png"));
 			}
 
 		} catch (IOException ex) {

@@ -306,7 +306,9 @@ public class PlayField {
                             }
                         case "King":
                             if (xStart == xEnd) {
+                                System.out.println("xS==XE");
                                 if (yEnd + 1 == yStart) {
+                                    System.out.println("yE+1==yS");
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
@@ -316,8 +318,12 @@ public class PlayField {
                                         } else {
                                             return false;
                                         }
+                                    }else{
+                                        setColorChange(!getColorChange());
+                                        return true;
                                     }
                                 } else if (yEnd - 1 == yStart) {
+                                    System.out.println("yE-1==yS");
                                     // check in theorie
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
@@ -328,12 +334,15 @@ public class PlayField {
                                             return false;
                                         }
                                     } else {
-                                        return false;
+                                        setColorChange(!getColorChange());
+                                        return true;
                                     }
                                 }
                             } else if (yStart == yEnd) {
+                                System.out.println("yE==yS");
                                 //check in theorie
                                 if (xEnd + 1 == xStart) {
+                                    System.out.println("xE+1==xS");
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                             piece.setMovedOnce(true);
@@ -343,9 +352,11 @@ public class PlayField {
                                             return false;
                                         }
                                     } else {
-                                        return false;
+                                        setColorChange(!getColorChange());
+                                        return true;
                                     }
                                 } else if (xEnd - 1 == xStart) {
+                                    System.out.println("xE-1==xS");
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                             piece.setMovedOnce(true);
@@ -355,10 +366,12 @@ public class PlayField {
                                             return false;
                                         }
                                     } else {
-                                        return false;
+                                        setColorChange(!getColorChange());
+                                        return true;
                                     }
                                 }
                             } else if (yEnd + 1 == yStart && xEnd + 1 == xStart) {
+                                System.out.println("yE+1==yS && xE+1 == xS");
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
@@ -369,9 +382,11 @@ public class PlayField {
                                         return false;
                                     }
                                 } else {
-                                    return false;
+                                    setColorChange(!getColorChange());
+                                    return true;
                                 }
                             } else if (yEnd - 1 == yStart && xEnd + 1 == xStart) {
+                                System.out.println("yE-1==yS && xE+1 == xS");
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
@@ -382,9 +397,11 @@ public class PlayField {
                                         return false;
                                     }
                                 } else {
-                                    return false;
+                                    setColorChange(!getColorChange());
+                                    return true;
                                 }
                             } else if (yEnd - 1 == yStart && xEnd - 1 == xStart) {
+                                System.out.println("yE-1==yS && xE-1 == xS");
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
@@ -395,9 +412,11 @@ public class PlayField {
                                         return false;
                                     }
                                 } else {
-                                    return false;
+                                    setColorChange(!getColorChange());
+                                    return true;
                                 }
                             } else if (yEnd + 1 == yStart && xEnd - 1 == xStart) {
+                                System.out.println("yE+1==yS && xE-1 == xS");
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
@@ -408,7 +427,8 @@ public class PlayField {
                                         return false;
                                     }
                                 } else {
-                                    return false;
+                                    setColorChange(!getColorChange());
+                                    return true;
                                 }
                             } else {
                                 return false;

@@ -17,6 +17,7 @@ public class PlayField {
 
     private ChessPiece[][] actPosition;
     private Position pos;
+    private boolean colorChange;
 
     public PlayField() {
         // initializes the array
@@ -34,302 +35,382 @@ public class PlayField {
 
         if (piece != null) {
             if (xStart != -999 || xEnd != -999 || yStart != -999 || yEnd != -999) {
-                if (piece instanceof Pawn) {
+                if (getColorChange() == piece.getColour()) {
+                    switch (piece.getName()) {
+                        case "Pawn":
+                            if (piece.getColour() == false) {
+                                // checked in theorie
+                                if ((yEnd - yStart) == 1 && xEnd == xStart) {
+                                    if (getPiece(xEnd, yEnd) == null) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
+                                    // checked in theorie
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
+                                    // checked in theorie
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
+                                    // checked in theorie
+                                    if ((yEnd - yStart) == 2 && xEnd == xStart) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
 
-                    System.out.println("Pawn block");
-                    // check move of black
-                    if (piece.getColour() == false) {
-                        // checked in theorie
-                        if ((yEnd - yStart) == 1 && xEnd == xStart) {
-                            if (getPiece(xEnd, yEnd) == null) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
+                                }
                                 return false;
+                            } else if (piece.getColour() == true) {
+                                // check move of white
+                                if ((yEnd - yStart) == -1 && xEnd == xStart) {
+                                    // checked in theorie
+                                    if (getPiece(xEnd, yEnd) == null) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
+                                    // checked in theorie
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
+                                    // checked in theorie
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
+                                    // checked in theorie
+                                    if ((yEnd - yStart) == -2 && xEnd == xStart) {
+                                        // two fields down
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    return false;
+                                }
                             }
-                        } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
-                            // checked in theorie
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
-                            // checked in theorie
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
-                            // checked in theorie
-                            if ((yEnd - yStart) == 2 && xEnd == xStart) {
-                                piece.setMovedOnce(true);
-                                return true;
+
+                        case "Knight":
+                            if (xEnd + 2 == xStart && yEnd + 1 == yStart || xEnd + 2 == xStart && yEnd - 1 == yStart
+                                    || xEnd - 2 == xStart && yEnd + 1 == yStart || xEnd - 2 == xStart && yEnd - 1 == yStart
+                                    || xEnd + 1 == xStart && yEnd + 2 == yStart || xEnd + 1 == xStart && yEnd - 2 == yStart
+                                    || xEnd - 1 == xStart && yEnd - 2 == yStart || xEnd - 1 == xStart && yEnd + 2 == yStart) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    piece.setMovedOnce(true);
+                                    setColorChange(!getColorChange());
+                                    return true;
+                                }
                             } else {
                                 return false;
                             }
 
-                        }
-                        return false;
-                    } else if (piece.getColour() == true) {
-                        // check move of white
-                        if ((yEnd - yStart) == -1 && xEnd == xStart) {
-                            // checked in theorie
-                            if (getPiece(xEnd, yEnd) == null) {
-                                piece.setMovedOnce(true);
-                                return true;
+
+                        case "Bishop":
+                            if (xEnd - xStart == yEnd - yStart) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
+                            } else if (xEnd - xStart == -(yEnd - yStart)) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
+                            }
+                            break;
+
+                        case "Rook":
+                            if (xStart == xEnd || yStart == yEnd) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
                             } else {
                                 return false;
                             }
-                        } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
-                            // checked in theorie
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
+
+                        case "Queen":
+                            if (xStart == xEnd) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
+                            } else if (yStart == yEnd) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
+                            } else if (xEnd - xStart == yEnd - yStart) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
+                            } else if (xEnd - xStart == -(yEnd - yStart)) {
+                                // checked in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        if(checkSpots(piece.getActPos(), end)){
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    if(checkSpots(piece.getActPos(), end)){
+                                        setColorChange(!getColorChange());
+                                        return true;
+                                    }else{
+                                        return false;
+                                    }
+                                }
+                            }
+                        case "King":
+                            if (xStart == xEnd) {
+                                if (yEnd + 1 == yStart) {
+                                    // checked in theorie
+                                    if (getPiece(xEnd, yEnd) != null) {
+                                        if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                            piece.setMovedOnce(true);
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+                                    }
+                                } else if (yEnd - 1 == yStart) {
+                                    // check in theorie
+                                    if (getPiece(xEnd, yEnd) != null) {
+                                        if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                            piece.setMovedOnce(true);
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                }
+                            } else if (yStart == yEnd) {
+                                //check in theorie
+                                if (xEnd + 1 == xStart) {
+                                    if (getPiece(xEnd, yEnd) != null) {
+                                        if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                            piece.setMovedOnce(true);
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                } else if (xEnd - 1 == xStart) {
+                                    if (getPiece(xEnd, yEnd) != null) {
+                                        if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                            piece.setMovedOnce(true);
+                                            return true;
+                                        } else {
+                                            return false;
+                                        }
+                                    } else {
+                                        return false;
+                                    }
+                                }
+                            } else if (yEnd + 1 == yStart && xEnd + 1 == xStart) {
+                                //check in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    return false;
+                                }
+                            } else if (yEnd - 1 == yStart && xEnd + 1 == xStart) {
+                                //check in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    return false;
+                                }
+                            } else if (yEnd - 1 == yStart && xEnd - 1 == xStart) {
+                                //check in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    return false;
+                                }
+                            } else if (yEnd + 1 == yStart && xEnd - 1 == xStart) {
+                                //check in theorie
+                                if (getPiece(xEnd, yEnd) != null) {
+                                    if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
+                                        piece.setMovedOnce(true);
+                                        return true;
+                                    } else {
+                                        return false;
+                                    }
+                                } else {
+                                    return false;
+                                }
                             } else {
                                 return false;
                             }
-                        } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
-                            // checked in theorie
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
-                            // checked in theorie
-                            if ((yEnd - yStart) == -2 && xEnd == xStart) {
-                                // two fields down
-                                piece.setMovedOnce(true);
-                                return true;
-                            }
-                        }
                     }
+                }else{
                     return false;
-
-                } else if (piece instanceof King) {
-                    System.out.println("King block");
-                    // check move King
-                    if (xStart == xEnd) {
-                        if (yStart + 1 == yEnd) {
-                            // checked in theorie
-                            if (getPiece(xEnd, yEnd) != null) {
-                                if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                    piece.setMovedOnce(true);
-                                    return true;
-                                } else {
-                                    return false;
-                                }
-                            }
-                        } else if (yStart - 1 == yEnd) {
-                            // check in theorie
-                            if (getPiece(xEnd, yEnd) != null) {
-                                if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                    piece.setMovedOnce(true);
-                                    return true;
-                                } else {
-                                    return false;
-                                }
-                            } else {
-                                return false;
-                            }
-                        }
-                    } else if (yStart == yEnd) {
-                        //check in theorie
-                        if (xStart + 1 == xEnd) {
-                            if (getPiece(xEnd, yEnd) != null) {
-                                if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                    piece.setMovedOnce(true);
-                                    return true;
-                                } else {
-                                    return false;
-                                }
-                            } else {
-                                return false;
-                            }
-                        } else if (xStart - 1 == xEnd) {
-                            if (getPiece(xEnd, yEnd) != null) {
-                                if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                    piece.setMovedOnce(true);
-                                    return true;
-                                } else {
-                                    return false;
-                                }
-                            } else {
-                                return false;
-                            }
-                        }
-                    } else if (yStart + 1 == yEnd && xStart + 1 == xEnd) {
-                        //check in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return false;
-                        }
-                    } else if (yStart - 1 == yEnd && xStart + 1 == xEnd) {
-                        //check in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return false;
-                        }
-                    } else if (yStart - 1 == yEnd && xStart - 1 == xEnd) {
-                        //check in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return false;
-                        }
-                    } else if (yStart + 1 == yEnd && xStart - 1 == xEnd) {
-                        //check in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return false;
-                        }
-                    } else {
-                        return false;
-                    }
-
-                } else if (piece instanceof Knight) {
-                    // check move knight
-                    System.out.println("Knight block");
-                    if (xEnd + 2 == xStart && yEnd + 1 == yStart || xEnd + 2 == xStart && yEnd - 1 == yStart
-                            || xEnd - 2 == xStart && yEnd + 1 == yStart || xEnd - 2 == xStart && yEnd - 1 == yStart
-                            || xEnd + 1 == xStart && yEnd + 2 == yStart || xEnd + 1 == xStart && yEnd - 2 == yStart
-                            || xEnd - 1 == xStart && yEnd - 2 == yStart || xEnd - 1 == xStart && yEnd + 2 == yStart) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                piece.setMovedOnce(true);
-                                return true;
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            piece.setMovedOnce(true);
-                            return true;
-                        }
-                    } else {
-                        return false;
-                    }
-
-                } else if (piece instanceof Queen) {
-                    // check move queen
-                    System.out.println("Queen block");
-                    if (xStart == xEnd) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    } else if (yStart == yEnd) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    } else if (xEnd - xStart == yEnd - yStart) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    } else if (xEnd - xStart == -(yEnd - yStart)) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    }
-                } else if (piece instanceof Bishop) {
-                    // check move bishop
-                    System.out.println("Bishop block");
-                    if (xEnd - xStart == yEnd - yStart) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    } else if (xEnd - xStart == -(yEnd - yStart)) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    }
-                } else if (piece instanceof Rook) {
-                    // check move rook
-                    System.out.println("Rook block");
-                    if (xStart == xEnd || yStart == yEnd) {
-                        // checked in theorie
-                        if (getPiece(xEnd, yEnd) != null) {
-                            if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                return checkSpots(piece.getActPos(), end);
-                            } else {
-                                return false;
-                            }
-                        } else {
-                            return checkSpots(piece.getActPos(), end);
-                        }
-                    } else {
-                        return false;
-                    }
                 }
+            }else{
+                return false;
             }
         }
         System.out.println("Last false statement was used");
@@ -355,7 +436,6 @@ public class PlayField {
         System.out.println("Y-END: " + yEnd);
 
         if (!(xEnd - xStart == 1 || xEnd - xStart == -1 && yEnd - yStart == -1 || yEnd - yStart == 1)) {
-
             if (xStart == xEnd && yStart > yEnd) {
                 // just to the top __CHECKED (theoretically)
                 System.out.println("X Werte sind gleich, y start wert ist größer als y end wert");
@@ -569,10 +649,19 @@ public class PlayField {
             }
         }
     }
+
+    public boolean getColorChange() {
+        return colorChange;
+    }
+
+    public void setColorChange(boolean colorChange) {
+        this.colorChange = colorChange;
+    }
 }
 
 /*
  * System.out.println("Bishop block"); System.out.println("Yend: " + yEnd);
  * System.out.println("Ystart: " + yStart); System.out.println("Xend: " + xEnd);
  * System.out.println("Xstart: " + xStart);
+ *
  */

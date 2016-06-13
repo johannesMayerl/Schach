@@ -17,32 +17,6 @@ public class Pawn extends ChessPiece {
         System.out.println("Pawn");
     }
 
-    public boolean specialMove(String choose, boolean color, PlayField field) throws FieldException, PositionException {
-        // if pawn reaches end
-        // player can choose a new chess piece (Queen, Bishop, Knight, Rook)
-        int counter = 1;
-
-        switch (choose) {
-            case "Queen":
-
-                counter++;
-                break;
-            case "Rook":
-
-                counter++;
-                break;
-            case "Knight":
-
-                counter++;
-                break;
-            case "Bishop":
-
-                counter++;
-                break;
-        }
-        return false;
-    }
-
     @Override
     public String toString() {
         if (getMovedOnce() == true) {

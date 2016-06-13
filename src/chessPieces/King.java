@@ -17,13 +17,6 @@ public class King extends ChessPiece {
         System.out.println("King");
     }
 
-    public boolean specialMove(King k, Knight kn) throws ChessPieceException {
-        if (k == null || kn == null)
-            throw new ChessPieceException("King and Knight must not be NULL!");
-
-        return true;
-    }
-
     @Override
     public String toString() {
         if (getMovedOnce() == true) {

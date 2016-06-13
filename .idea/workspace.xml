@@ -2,68 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Bishop.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Bishop.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/ChessPiece.class" afterPath="$PROJECT_DIR$/bin/chessPieces/ChessPiece.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/King.class" afterPath="$PROJECT_DIR$/bin/chessPieces/King.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Knight.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Knight.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Pawn.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Pawn.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Queen.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Queen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Rook.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Rook.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/exceptions/ChessPieceException.class" afterPath="$PROJECT_DIR$/bin/exceptions/ChessPieceException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/exceptions/FieldException.class" afterPath="$PROJECT_DIR$/bin/exceptions/FieldException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/exceptions/GameExceptions.class" afterPath="$PROJECT_DIR$/bin/exceptions/GameExceptions.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/exceptions/PlayerException.class" afterPath="$PROJECT_DIR$/bin/exceptions/PlayerException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/exceptions/PositionException.class" afterPath="$PROJECT_DIR$/bin/exceptions/PositionException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/BridgeFromFrontEndToBackEnd$1.class" afterPath="$PROJECT_DIR$/bin/model/BridgeFromFrontEndToBackEnd$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/BridgeFromFrontEndToBackEnd.class" afterPath="$PROJECT_DIR$/bin/model/BridgeFromFrontEndToBackEnd.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/ChessGame.class" afterPath="$PROJECT_DIR$/bin/model/ChessGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/PlayField.class" afterPath="$PROJECT_DIR$/bin/model/PlayField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/Player.class" afterPath="$PROJECT_DIR$/bin/model/Player.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/Position.class" afterPath="$PROJECT_DIR$/bin/model/Position.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/SaveLoad.class" afterPath="$PROJECT_DIR$/bin/model/SaveLoad.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/TestPieces.class" afterPath="$PROJECT_DIR$/bin/model/TestPieces.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Archive$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Archive$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Archive$2.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Archive$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Archive.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Archive.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/ArchiveList.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/ArchiveList.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/ArchiveListeners.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/ArchiveListeners.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/BackButton$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/BackButton$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/BackButton$2.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/BackButton$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/BackButton$3.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/BackButton$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/BackButton.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/BackButton.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/BlackField.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/BlackField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/FieldWrapper.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/FieldWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Frame.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Frame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/FrameTest$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/FrameTest$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/FrameTest.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/FrameTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGameListeners.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGameListeners.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$2.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$3.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$4.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$5.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$6.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$7.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenu.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainMenuListeners.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainMenuListeners.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Settings$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Settings$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Settings$2.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Settings$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Settings.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Settings.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/SettingsListeners.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/SettingsListeners.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/WhiteField.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/WhiteField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Project_2015-16_POS.iml" afterPath="$PROJECT_DIR$/Project_2015-16_POS.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Bishop.java" afterPath="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" afterPath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/King.java" afterPath="$PROJECT_DIR$/src/chessPieces/King.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Knight.java" afterPath="$PROJECT_DIR$/src/chessPieces/Knight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Pawn.java" afterPath="$PROJECT_DIR$/src/chessPieces/Pawn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Queen.java" afterPath="$PROJECT_DIR$/src/chessPieces/Queen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Rook.java" afterPath="$PROJECT_DIR$/src/chessPieces/Rook.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +24,38 @@
     <favorites_list name="Project_2015-16_POS" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="MainGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrameTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontrol/FrameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BridgeFromFrontEndToBackEnd.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/BridgeFromFrontEndToBackEnd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -145,6 +115,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -197,9 +170,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -666,27 +636,28 @@
       <updated>1465372462038</updated>
       <workItem from="1465372472690" duration="109000" />
       <workItem from="1465798555062" duration="483000" />
+      <workItem from="1465799820883" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="592000" />
+    <option name="totallyTimeSpent" value="659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16930023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.022573363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.022573363" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -698,8 +669,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -715,21 +686,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/FrameTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chessPieces/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -758,7 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -766,7 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="789">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,6 +738,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/FrameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/BridgeFromFrontEndToBackEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="197" column="0" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
           <folding />
         </state>
       </provider>

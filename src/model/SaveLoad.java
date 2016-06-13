@@ -13,6 +13,7 @@ public class SaveLoad {
 	}
 
 	public void save(String savename, ChessGame game_info) throws IOException {
+		//herp derp whatever
 		BufferedWriter writer = new BufferedWriter(new FileWriter(savename + ".txt", true));
 		//writer.write(game_info.saveData());
 		writer.close();

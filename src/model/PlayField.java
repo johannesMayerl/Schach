@@ -684,6 +684,24 @@ public class PlayField {
         }
     }
 
+    //noch einbaun
+    public boolean pawnSpecial(ChessPiece changePiece){
+        if(changePiece != null) {
+            for (int i = 0; i < actPosition.length; i++) {
+                if (actPosition[i][7].getColour() == false && actPosition[i][7].getName() == "Pawn") {
+                    actPosition[i][7] = changePiece;
+                    return true;
+                } else if (actPosition[i][0].getColour() == false && actPosition[i][0].getName() == "Pawn") {
+                    actPosition[i][0] = changePiece;
+                    return true;
+                }
+            }
+        }else {
+            return false;
+        }
+        return false;
+    }
+
     public boolean getColorChange() {
         return colorChange;
     }

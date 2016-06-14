@@ -49,8 +49,8 @@ public class PlayField {
                                 // checked in theorie
                                 if ((yEnd - yStart) == 1 && xEnd == xStart) {
                                     if (getPiece(xEnd, yEnd) == null) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -58,8 +58,8 @@ public class PlayField {
                                 } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -67,8 +67,8 @@ public class PlayField {
                                 } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                       // piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -77,8 +77,8 @@ public class PlayField {
                                     // checked in theorie
                                     if ((yEnd - yStart) == 2 && xEnd == xStart) {
                                         if(actPosition[xEnd][yEnd] == null) {
-                                            piece.setMovedOnce(true);
-                                            setColorChange(!getColorChange());
+                                            //piece.setMovedOnce(true);
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -93,8 +93,8 @@ public class PlayField {
                                 if ((yEnd - yStart) == -1 && xEnd == xStart) {
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd) == null) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -102,8 +102,8 @@ public class PlayField {
                                 } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -111,8 +111,8 @@ public class PlayField {
                                 } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
@@ -122,8 +122,8 @@ public class PlayField {
                                     if ((yEnd - yStart) == -2 && xEnd == xStart) {
                                         // two fields down
                                         if(actPosition[xEnd][yEnd] == null) {
-                                            piece.setMovedOnce(true);
-                                            setColorChange(!getColorChange());
+                                            //piece.setMovedOnce(true);
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -144,15 +144,15 @@ public class PlayField {
                                 // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    piece.setMovedOnce(true);
-                                    setColorChange(!getColorChange());
+                                    //piece.setMovedOnce(true);
+                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else {
@@ -165,7 +165,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -175,7 +175,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -186,7 +186,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -196,7 +196,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -211,7 +211,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -221,7 +221,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -237,7 +237,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -247,7 +247,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -258,7 +258,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -268,7 +268,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -279,7 +279,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -289,7 +289,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -300,7 +300,7 @@ public class PlayField {
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            setColorChange(!getColorChange());
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -310,7 +310,7 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -325,14 +325,14 @@ public class PlayField {
                                     // checked in theorie
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            piece.setMovedOnce(true);
-                                            setColorChange(!getColorChange());
+                                            //piece.setMovedOnce(true);
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     }else{
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 } else if (yEnd - 1 == yStart) {
@@ -340,14 +340,14 @@ public class PlayField {
                                     // check in theorie
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            piece.setMovedOnce(true);
-                                            setColorChange(!getColorChange());
+                                            //piece.setMovedOnce(true);
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     } else {
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 }
@@ -358,28 +358,28 @@ public class PlayField {
                                     System.out.println("xE+1==xS");
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            piece.setMovedOnce(true);
-                                            setColorChange(!getColorChange());
+                                            //piece.setMovedOnce(true);
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     } else {
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 } else if (xEnd - 1 == xStart) {
                                     System.out.println("xE-1==xS");
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            piece.setMovedOnce(true);
-                                            setColorChange(!getColorChange());
+                                            //piece.setMovedOnce(true);
+                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     } else {
-                                        setColorChange(!getColorChange());
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 }
@@ -388,14 +388,14 @@ public class PlayField {
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    setColorChange(!getColorChange());
+                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else if (yEnd - 1 == yStart && xEnd + 1 == xStart) {
@@ -403,14 +403,14 @@ public class PlayField {
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    setColorChange(!getColorChange());
+                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else if (yEnd - 1 == yStart && xEnd - 1 == xStart) {
@@ -418,14 +418,14 @@ public class PlayField {
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    setColorChange(!getColorChange());
+                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else if (yEnd + 1 == yStart && xEnd - 1 == xStart) {
@@ -433,14 +433,14 @@ public class PlayField {
                                 //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
+                                        //piece.setMovedOnce(true);
+                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    setColorChange(!getColorChange());
+                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else {
@@ -673,6 +673,8 @@ public class PlayField {
                 actPosition[pos.xValue(piece.getActPos())][pos.yValue(piece.getActPos())] = null;
                 actPosition[xEnd][yEnd] = piece;
 
+                piece.setMovedOnce(true);
+                setColorChange(!getColorChange());
                 piece.setActPos(position);
 
                 //saving last move
@@ -732,11 +734,41 @@ public class PlayField {
         }
     }
 
-    public boolean rochade(King k, Knight kt){
-        if(k.getColour() == kt.getColour()){
-            if(k.getMovedOnce() == false && kt.getMovedOnce() == false){
-                if(true){
+    public boolean rochade(King k, Rook r) throws PositionException, FieldException {
 
+        int xR = pos.xValue(r.getActPos());
+        int xK = pos.xValue(k.getActPos());
+        int yCommon = pos.yValue(r.getActPos());
+
+
+        if(k.getColour() == r.getColour()){
+            if(k.getMovedOnce() == false && r.getMovedOnce() == false){
+                if(yCommon == 0 || yCommon == 7) {
+                    if (xR == 7 || xR == 0) {
+                        if(checkSpots(r.getActPos(), k.getActPos())){
+                            actPosition[xR-2][yCommon] = r;
+                            r.setMovedOnce(true);
+                            actPosition[xR][yCommon] = null;
+
+                            actPosition[xK+2][yCommon] = k;
+                            k.setMovedOnce(true);
+                            actPosition[xK][yCommon] = null;
+
+                            return true;
+                        }
+                    } else if (xR == 0) {
+                        if(checkSpots(r.getActPos(), k.getActPos())){
+                            actPosition[xR+3][yCommon] = r;
+                            r.setMovedOnce(true);
+                            actPosition[xR][yCommon] = null;
+
+                            actPosition[xK-2][yCommon] = k;
+                            k.setMovedOnce(true);
+                            actPosition[xK][yCommon] = null;
+
+                            return true;
+                        }
+                    }
                 }
             }
         }

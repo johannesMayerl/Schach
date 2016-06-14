@@ -250,7 +250,8 @@ public class BridgeFromFrontEndToBackEnd {
 
 		for(int i = 0; i < logicField.length; i++){
 			for(int j = 0; j < logicField[i].length; j++){
-                //Reference for field color
+
+				//Reference for field color
                 ImageIcon img = (ImageIcon) guiField[i][j].getIcon();
                 String path = img.getDescription();
                 //if true -> black
@@ -360,7 +361,6 @@ public class BridgeFromFrontEndToBackEnd {
 				}
 			}
 		}
-
         frame.getPanel4().repaint();
 	}
 

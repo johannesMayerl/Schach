@@ -33,12 +33,15 @@ public class MainGame extends JPanel {
 	private JPanel centerBoard;
 	private JPanel bottomBoard;
 	private BackButton back;
+	private BackButton backMove;
 
 	private ChessGame game;
 	private ChessPiece currentFigure;
 	private FieldWrapper currentField;
 	private String[] felder = { "A", "B", "C", "D", "E", "F", "G", "H" };
 	private FieldWrapper[][] field;
+
+	private boolean gameOver;
 
 	private MainGameListeners listener;
 
@@ -47,12 +50,15 @@ public class MainGame extends JPanel {
 	}
 
 	public MainGame(Image img, Frame frame) {
+
+		setGameOver(false);
+
 		this.frame = frame;
 		this.img = img;
 		this.listener = new MainGameListeners(this);
 
 		field = new FieldWrapper[8][8];
-		game = new ChessGame();
+		game = new ChessGame(this);
 
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		Dimension size = new Dimension(img.getWidth(null), img.getHeight(null));
@@ -63,6 +69,10 @@ public class MainGame extends JPanel {
 		setLayout(new GridBagLayout());
 
 		GridBagConstraints gbc = new GridBagConstraints();
+
+		gbc.gridx = 2;
+		gbc.gridy = 1;
+		add(createTopPanel(), gbc);
 
 		gbc.gridx = 1;
 		gbc.gridy = 1;
@@ -308,6 +318,19 @@ public class MainGame extends JPanel {
 		bottomBoard.setLayout(new GridLayout(1, 1));
 		bottomBoard.setOpaque(false);
 
+		backMove = new BackButton();
+		backMove.addActionListener(listener);
+		backMove.setVisible(true);
+		bottomBoard.add(backMove);
+
+		return bottomBoard;
+	}
+
+	public JPanel createTopPanel() {
+		bottomBoard = new JPanel();
+		bottomBoard.setLayout(new GridBagLayout());
+		bottomBoard.setOpaque(false);
+
 		back = new BackButton();
 		back.addActionListener(listener);
 		back.setVisible(true);
@@ -319,12 +342,6 @@ public class MainGame extends JPanel {
 	// Debug Method --> delete
 	public void testField() {
 		FieldWrapper[][] temp = getField();
-
-		for (int i = 0; i < temp.length; i++) {
-			for (int j = 0; j < temp[i].length; j++) {
-				System.out.println(i + " " + j + " :" + temp[i][j].toString());
-			}
-		}
 	}
 
 	public void playSound() {
@@ -340,6 +357,10 @@ public class MainGame extends JPanel {
 				}
 			}
 		}).start();
+	}
+
+	public void gameOver(){
+		setGameOver(true);
 	}
 
 	public Frame getFrame() {
@@ -450,4 +471,19 @@ public class MainGame extends JPanel {
 		this.currentField = currentField;
 	}
 
+	public boolean isGameOver() {
+		return gameOver;
+	}
+
+	public void setGameOver(boolean gameOver) {
+		this.gameOver = gameOver;
+	}
+
+	public BackButton getBackMove() {
+		return backMove;
+	}
+
+	public void setBackMove(BackButton backMove) {
+		this.backMove = backMove;
+	}
 }

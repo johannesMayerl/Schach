@@ -19,6 +19,9 @@ public abstract class ChessPiece {
     //name
     private String name;
 
+    //game over
+    private boolean gameOver;
+
     // like "g5"
     private String actPosition;
 

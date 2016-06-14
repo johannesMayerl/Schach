@@ -4,6 +4,9 @@ import chessPieces.*;
 import exceptions.FieldException;
 import exceptions.PositionException;
 
+import javax.swing.*;
+import javax.swing.plaf.ColorUIResource;
+import java.awt.*;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -19,11 +22,15 @@ public class PlayField {
     private Position pos;
     private boolean colorChange;
 
-    public PlayField() {
+    private ChessGame cg;
+
+    public PlayField(ChessGame cg) {
         // initializes the array
         actPosition = new ChessPiece[8][8];
         putPiecesOnStart();
         pos = new Position();
+
+        this.cg = cg;
     }
 
     public boolean validMove(String end, ChessPiece piece) throws FieldException, PositionException {
@@ -79,7 +86,6 @@ public class PlayField {
                                     } else {
                                         return false;
                                     }
-
                                 }
                                 return false;
                             } else if (piece.getColour() == true) {
@@ -152,7 +158,6 @@ public class PlayField {
                             } else {
                                 return false;
                             }
-
 
                         case "Bishop":
                             if (xEnd - xStart == yEnd - yStart) {
@@ -660,10 +665,20 @@ public class PlayField {
                 int xEnd = pos.xValue(position);
                 int yEnd = pos.yValue(position);
 
+                if( actPosition[xEnd][yEnd] instanceof King){
+                    System.out.println("Game Over");
+                    gameOver();
+                }
+
                 actPosition[pos.xValue(piece.getActPos())][pos.yValue(piece.getActPos())] = null;
                 actPosition[xEnd][yEnd] = piece;
 
                 piece.setActPos(position);
+
+                //saving last move
+                cg.getListOfMovesMade().add(this);
+                cg.setLast(+1);
+
             } else
                 throw new FieldException("The position String in the method 'setActualPosition' must not be null!");
         } else
@@ -694,7 +709,7 @@ public class PlayField {
 
     //noch einbaun
     public boolean pawnSpecial(ChessPiece changePiece){
-        if(changePiece != null) {
+        if(changePiece.getName()=="Knight" || changePiece.getName()=="Queen" || changePiece.getName()=="Bishop" || changePiece.getName()=="Rook") {
             for (int i = 0; i < actPosition.length; i++) {
                 if (actPosition[i][7].getColour() == false && actPosition[i][7].getName() == "Pawn") {
                     actPosition[i][7] = changePiece;
@@ -710,7 +725,21 @@ public class PlayField {
         return false;
     }
 
+    public boolean rochade(King k, Knight kt){
+        if(k.getColour() == kt.getColour()){
+            if(k.getMovedOnce() == false && kt.getMovedOnce() == false){
+                if(true){
 
+                }
+            }
+        }
+        return false;
+    }
+
+    public void gameOver(){
+        System.out.println("PlayField");
+        getCg().getMg().gameOver();
+    }
 
     public boolean getColorChange() {
         return colorChange;
@@ -718,6 +747,14 @@ public class PlayField {
 
     public void setColorChange(boolean colorChange) {
         this.colorChange = colorChange;
+    }
+
+    public ChessGame getCg() {
+        return cg;
+    }
+
+    public void setCg(ChessGame cg) {
+        this.cg = cg;
     }
 }
 

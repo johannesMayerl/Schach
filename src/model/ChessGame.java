@@ -3,6 +3,9 @@ package model;
 import exceptions.FieldException;
 import exceptions.GameExceptions;
 import exceptions.PositionException;
+import viewcontrol.MainGame;
+
+import java.util.ArrayList;
 
 /**
  * Created by Noah on 04.05.2016.
@@ -10,10 +13,18 @@ import exceptions.PositionException;
 public class ChessGame {
 
 	private PlayField board;
+	private MainGame mg;
 
-	public ChessGame() {
+	private ArrayList<PlayField> listOfMovesMade;
+	private int last;
+
+	public ChessGame(MainGame mg) {
 		super();
-		board = new PlayField();
+		board = new PlayField(this);
+
+		last = -1;
+		listOfMovesMade = new ArrayList<PlayField>();
+		this.mg = mg;
 	}
 
 	public PlayField getBoard() {
@@ -26,4 +37,32 @@ public class ChessGame {
 		this.board = board;
 	}
 
+	public MainGame getMg() {
+		return mg;
+	}
+
+	public void back(){
+		board = listOfMovesMade.get(last-1);
+		mg.getFrame().getBridge().updateField();
+	}
+
+	public void setMg(MainGame mg) {
+		this.mg = mg;
+	}
+
+	public ArrayList<PlayField> getListOfMovesMade() {
+		return listOfMovesMade;
+	}
+
+	public void setListOfMovesMade(ArrayList<PlayField> listOfMovesMade) {
+		this.listOfMovesMade = listOfMovesMade;
+	}
+
+	public int getLast() {
+		return last;
+	}
+
+	public void setLast(int last) {
+		this.last = last;
+	}
 }

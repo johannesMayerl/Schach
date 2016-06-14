@@ -33,6 +33,8 @@ public class MainGameListeners implements ActionListener, MouseListener {
 
 		if (source == panel.getBack()) {
 			panel.getFrame().toggleMainGame(false);
+		} else if (source == panel.getBackMove()) {
+			panel.getGame().back();
 		}
 	}
 

@@ -14,7 +14,6 @@ public class Knight extends ChessPiece {
     public Knight(boolean color, String start, boolean movedOnce) {
         super(color, start, movedOnce);
         setName("Knight");
-        System.out.println("Knight");
     }
 
     @Override

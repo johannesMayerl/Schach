@@ -12,8 +12,6 @@ import java.io.IOException;
  * Created by Noah on 30.04.2016.
  */
 public class Position {
-    //a1 == a0
-    //a8 == a7
     private int xValue;
     private int yValue;
 

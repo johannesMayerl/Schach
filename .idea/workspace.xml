@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/PlayField.class" afterPath="$PROJECT_DIR$/bin/model/PlayField.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Bishop.java" afterPath="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" afterPath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/King.java" afterPath="$PROJECT_DIR$/src/chessPieces/King.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Knight.java" afterPath="$PROJECT_DIR$/src/chessPieces/Knight.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Pawn.java" afterPath="$PROJECT_DIR$/src/chessPieces/Pawn.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Queen.java" afterPath="$PROJECT_DIR$/src/chessPieces/Queen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Rook.java" afterPath="$PROJECT_DIR$/src/chessPieces/Rook.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/PlayField.java" afterPath="$PROJECT_DIR$/src/model/PlayField.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Position.java" afterPath="$PROJECT_DIR$/src/model/Position.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,18 +34,7 @@
     <favorites_list name="Project_2015-16_POS" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="PlayField.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="765" column="47" selection-start-line="765" selection-start-column="47" selection-end-line="765" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -58,21 +56,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/model/SaveLoad.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/Queen.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/Rook.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/derp.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/Archive.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainMenuListeners.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/King.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/Pawn.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/Knight.java" />
-        <option value="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
         <option value="$PROJECT_DIR$/src/model/BridgeFromFrontEndToBackEnd.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
         <option value="$PROJECT_DIR$/src/model/ChessGame.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java" />
         <option value="$PROJECT_DIR$/src/model/PlayField.java" />
+        <option value="$PROJECT_DIR$/src/model/Position.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/Rook.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/Queen.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/Pawn.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/Knight.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/King.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
+        <option value="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
       </list>
     </option>
   </component>
@@ -693,7 +692,7 @@
       <workItem from="1465882503291" duration="2834000" />
       <workItem from="1465891459979" duration="8921000" />
       <workItem from="1465900598739" duration="49000" />
-      <workItem from="1465923130897" duration="2735000" />
+      <workItem from="1465923130897" duration="3816000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -863,11 +862,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465924412655</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Field works">
+      <created>1465925873257</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1465925873257</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39423000" />
+    <option name="totallyTimeSpent" value="40504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -880,21 +886,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06659142" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16930023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14221218" sideWeight="0.5343348" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5343348" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4828326" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14221218" sideWeight="0.46566522" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.46566522" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18401287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18401287" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -976,7 +982,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14696">
           <caret line="679" column="29" selection-start-line="679" selection-start-column="29" selection-end-line="679" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#25294#25295#0" expanded="true" />
+            <element signature="e#25328#25329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1020,7 +1029,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#25294#25295#0" expanded="true" />
+            <element signature="e#25328#25329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1038,7 +1050,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#25294#25295#0" expanded="true" />
+            <element signature="e#25328#25329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1056,7 +1071,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#25294#25295#0" expanded="true" />
+            <element signature="e#25328#25329#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1133,13 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/TestPieces.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1212,22 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessPieces/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessPieces/King.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/WhiteField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1242,33 +1237,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessPieces/ChessPiece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-          <folding>
-            <element signature="e#1181#1182#0" expanded="true" />
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1281#1282#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/BackButton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ChessGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1300,18 +1272,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessPieces/Knight.java">
+    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="9944">
+          <caret line="463" column="9" selection-start-line="463" selection-start-column="9" selection-end-line="463" selection-end-column="9" />
+          <folding>
+            <element signature="e#25294#25295#0" expanded="true" />
+            <element signature="e#25328#25329#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessPieces/Rook.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ChessGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessPieces/Bishop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessPieces/ChessPiece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#803#804#0" expanded="true" />
+            <element signature="e#837#838#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1224#1225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessPieces/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessPieces/Knight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessPieces/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -1319,23 +1349,15 @@
     <entry file="file://$PROJECT_DIR$/src/chessPieces/Queen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessPieces/Pawn.java">
+    <entry file="file://$PROJECT_DIR$/src/chessPieces/Rook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="765" column="47" selection-start-line="765" selection-start-column="47" selection-end-line="765" selection-end-column="47" />
+        <state relative-caret-position="242">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding />
         </state>
       </provider>

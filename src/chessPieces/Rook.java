@@ -14,7 +14,6 @@ public class Rook extends ChessPiece {
     public Rook(boolean color, String start, boolean movedOnce) {
         super(color, start, movedOnce);
         setName("Rook");
-        System.out.println("Rook");
     }
 
     @Override

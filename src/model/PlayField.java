@@ -25,7 +25,6 @@ public class PlayField {
     private ChessGame cg;
 
     public PlayField(ChessGame cg) {
-        // initializes the array
         actPosition = new ChessPiece[8][8];
         putPiecesOnStart();
         pos = new Position();
@@ -36,7 +35,6 @@ public class PlayField {
     public boolean validMove(String end, ChessPiece piece) throws FieldException, PositionException {
         int xStart = pos.xValue(piece.getActPos());
         int yStart = pos.yValue(piece.getActPos());
-
         int xEnd = pos.xValue(end);
         int yEnd = pos.yValue(end);
 
@@ -46,39 +44,27 @@ public class PlayField {
                     switch (piece.getName()) {
                         case "Pawn":
                             if (piece.getColour() == false) {
-                                // checked in theorie
                                 if ((yEnd - yStart) == 1 && xEnd == xStart) {
                                     if (getPiece(xEnd, yEnd) == null) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
-                                    // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else if ((yEnd - yStart) == 1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
-                                    // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                       // piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
-                                    // checked in theorie
                                     if ((yEnd - yStart) == 2 && xEnd == xStart) {
                                         if(actPosition[xEnd][yEnd] == null) {
-                                            //piece.setMovedOnce(true);
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -89,41 +75,27 @@ public class PlayField {
                                 }
                                 return false;
                             } else if (piece.getColour() == true) {
-                                // check move of white
                                 if ((yEnd - yStart) == -1 && xEnd == xStart) {
-                                    // checked in theorie
                                     if (getPiece(xEnd, yEnd) == null) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == -1 && getPiece(xEnd, yEnd) != null) {
-                                    // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else if ((yEnd - yStart) == -1 && (xEnd - xStart) == 1 && getPiece(xEnd, yEnd) != null) {
-                                    // checked in theorie
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
-                                    // checked in theorie
                                     if ((yEnd - yStart) == -2 && xEnd == xStart) {
-                                        // two fields down
                                         if(actPosition[xEnd][yEnd] == null) {
-                                            //piece.setMovedOnce(true);
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -141,18 +113,13 @@ public class PlayField {
                                     || xEnd - 2 == xStart && yEnd + 1 == yStart || xEnd - 2 == xStart && yEnd - 1 == yStart
                                     || xEnd + 1 == xStart && yEnd + 2 == yStart || xEnd + 1 == xStart && yEnd - 2 == yStart
                                     || xEnd - 1 == xStart && yEnd - 2 == yStart || xEnd - 1 == xStart && yEnd + 2 == yStart) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    //piece.setMovedOnce(true);
-                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else {
@@ -161,11 +128,9 @@ public class PlayField {
 
                         case "Bishop":
                             if (xEnd - xStart == yEnd - yStart) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -175,18 +140,15 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
                                     }
                                 }
                             } else if (xEnd - xStart == -(yEnd - yStart)) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -196,7 +158,6 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -207,11 +168,9 @@ public class PlayField {
 
                         case "Rook":
                             if (xStart == xEnd || yStart == yEnd) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -221,7 +180,6 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -233,11 +191,9 @@ public class PlayField {
 
                         case "Queen":
                             if (xStart == xEnd) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -247,18 +203,15 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
                                     }
                                 }
                             } else if (yStart == yEnd) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -268,18 +221,15 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
                                     }
                                 }
                             } else if (xEnd - xStart == yEnd - yStart) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -289,18 +239,15 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
                                     }
                                 }
                             } else if (xEnd - xStart == -(yEnd - yStart)) {
-                                // checked in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         }else{
                                             return false;
@@ -310,7 +257,6 @@ public class PlayField {
                                     }
                                 } else {
                                     if(checkSpots(piece.getActPos(), end)){
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }else{
                                         return false;
@@ -319,128 +265,87 @@ public class PlayField {
                             }
                         case "King":
                             if (xStart == xEnd) {
-                                System.out.println("xS==XE");
                                 if (yEnd + 1 == yStart) {
-                                    System.out.println("yE+1==yS");
-                                    // checked in theorie
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            //piece.setMovedOnce(true);
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     }else{
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 } else if (yEnd - 1 == yStart) {
-                                    System.out.println("yE-1==yS");
-                                    // check in theorie
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            //piece.setMovedOnce(true);
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     } else {
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 }
                             } else if (yStart == yEnd) {
-                                System.out.println("yE==yS");
-                                //check in theorie
                                 if (xEnd + 1 == xStart) {
-                                    System.out.println("xE+1==xS");
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            //piece.setMovedOnce(true);
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     } else {
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 } else if (xEnd - 1 == xStart) {
-                                    System.out.println("xE-1==xS");
                                     if (getPiece(xEnd, yEnd) != null) {
                                         if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                            //piece.setMovedOnce(true);
-                                            //setColorChange(!getColorChange());
                                             return true;
                                         } else {
                                             return false;
                                         }
                                     } else {
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     }
                                 }
                             } else if (yEnd + 1 == yStart && xEnd + 1 == xStart) {
-                                System.out.println("yE+1==yS && xE+1 == xS");
-                                //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else if (yEnd - 1 == yStart && xEnd + 1 == xStart) {
-                                System.out.println("yE-1==yS && xE+1 == xS");
-                                //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else if (yEnd - 1 == yStart && xEnd - 1 == xStart) {
-                                System.out.println("yE-1==yS && xE-1 == xS");
-                                //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else if (yEnd + 1 == yStart && xEnd - 1 == xStart) {
-                                System.out.println("yE+1==yS && xE-1 == xS");
-                                //check in theorie
                                 if (getPiece(xEnd, yEnd) != null) {
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
-                                        //piece.setMovedOnce(true);
-                                        //setColorChange(!getColorChange());
                                         return true;
                                     } else {
                                         return false;
                                     }
                                 } else {
-                                    //setColorChange(!getColorChange());
                                     return true;
                                 }
                             } else {
@@ -454,7 +359,6 @@ public class PlayField {
                 return false;
             }
         }
-        System.out.println("Last false statement was used");
         return false;
     }
 
@@ -465,139 +369,86 @@ public class PlayField {
             throw new FieldException("End position must not be NULL!");
 
         int xStart = pos.xValue(start);
-        System.out.println("X-START: " + xStart);
-
         int yStart = pos.yValue(start);
-        System.out.println("y-START: " + yStart);
-
         int xEnd = pos.xValue(end);
-        System.out.println("X-END: " + xEnd);
-
         int yEnd = pos.yValue(end);
-        System.out.println("Y-END: " + yEnd);
 
         if (!(xEnd - xStart == 1 || xEnd - xStart == -1 && yEnd - yStart == -1 || yEnd - yStart == 1)) {
             if (xStart == xEnd && yStart > yEnd) {
-                // just to the top __CHECKED (theoretically)
-                System.out.println("X Werte sind gleich, y start wert ist größer als y end wert");
                 for (int w = yStart - 1; w >= yEnd + 1; w--) {
                     if (actPosition[xStart][w] != null) {
-                        System.out.println("X: " + xStart + "Y: " + w + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + w + "Y: " + yStart + " is not occupied");
                     }
                 }
                 return true;
             } else if (yStart == yEnd && xStart < xEnd) {
-                // just to the right __CHECKED (theoretically)
-                System.out.println("Y werte Sind gleich, x start wert ist kleiner als x end wert");
                 for (int w = xStart + 1; w <= xEnd - 1; w++) {
                     if (actPosition[w][yStart] != null) {
-                        System.out.println("X: " + w + "Y: " + yStart + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + w + "Y: " + yStart + " is not occupied");
                     }
                 }
                 return true;
             } else if (xStart == xEnd && yStart < yEnd) {
-                // just the bottom __CHECKED (theoretically)
-                System.out.println("X werte Sind gleich, y start wert ist kleiner als y end wert");
                 for (int w = yStart + 1; w <= yEnd - 1; w++) {
                     if (actPosition[xStart][w] != null) {
-                        System.out.println("X: " + xStart + "Y: " + w + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + xStart + "Y: " + w + " is not occupied");
                     }
                 }
                 return true;
 
             } else if (yStart == yEnd && xStart > xEnd) {
-                // just to the left __CHECKED (theoretically)
-                System.out.println("Y Werte sind gleich, x Start Wert ist größer als x End Wert");
                 for (int w = xStart - 1; w >= xEnd + 1; w--) {
                     if (actPosition[w][yStart] != null) {
-                        System.out.println("X: " + w + "Y: " + yStart + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + w + "Y: " + yStart + " is not occupied");
                     }
                 }
                 return true;
             } else if (xStart > xEnd && yStart > yEnd) {
 
-                System.out.println("xStart > xEnd && yStart > yEnd");
                 int i = xStart - 1;
                 int j = yStart - 1;
                 while (i > xEnd + 1 && j >= yEnd + 1) {
-                    System.out.println("First While loop: xStart > xEnd && yStart > yEnd");
                     if (actPosition[i][j] != null) {
-                        System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + i + "Y: " + j + " is not occupied");
                     }
                     i--;
                     j--;
                 }
                 return true;
             } else if (yStart > yEnd && xStart < xEnd) {
-
-                System.out.println("xStart > xEnd && yStart < yEnd");
                 int i = xStart + 1;
                 int j = yStart - 1;
                 while (i <= xEnd - 1 && j >= yEnd + 1) {
-                    System.out.println("Second While loop: xStart > xEnd && yStart < yEnd");
                     if (actPosition[i][j] != null) {
-                        System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + i + "Y: " + j + " is not occupied");
                     }
                     i++;
                     j--;
                 }
                 return true;
             } else if (xStart < xEnd && yStart < yEnd) {
-
-                System.out.println("xStart < xEnd && yStart < yEnd");
                 int i = xStart + 1;
                 int j = yStart + 1;
-                //problem
                 while (i < xEnd  && j < yEnd ) {
-
                     if (actPosition[i][j] != null) {
-                        System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + i + "Y: " + j + " is not occupied");
                     }
                     i++;
                     j++;
                 }
                 return true;
             } else if (yStart < yEnd && xStart > xEnd) {
-
-                System.out.println("xStart < xEnd && yStart > yEnd");
                 int i = xStart - 1;
                 int j = yStart + 1;
-
                 while (i > xEnd  && j < yEnd ) {
-                    System.out.println("Fourth While loop: xStart < xEnd && yStart > yEnd");
                     if (actPosition[i][j] != null) {
-                        System.out.println("X: " + i + "Y: " + j + " is occupied");
                         return false;
-                    } else {
-                        System.out.println("X: " + i + "Y: " + j + " is not occupied");
                     }
                     i--;
                     j++;
                 }
                 return true;
             }
-            System.out.println("Did not move");
             return false;
         } else {
             return true;
@@ -612,7 +463,6 @@ public class PlayField {
             }
         }
 
-        // Pawn_black
         actPosition[0][1] = new Pawn(false, "a7", false);
         actPosition[1][1] = new Pawn(false, "b7", false);
         actPosition[2][1] = new Pawn(false, "c7", false);
@@ -621,21 +471,16 @@ public class PlayField {
         actPosition[5][1] = new Pawn(false, "f7", false);
         actPosition[6][1] = new Pawn(false, "g7", false);
         actPosition[7][1] = new Pawn(false, "h7", false);
-        // Rook_black
         actPosition[0][0] = new Rook(false, "a8", false);
         actPosition[7][0] = new Rook(false, "h8", false);
-        // Knight_black
         actPosition[1][0] = new Knight(false, "b8", false);
         actPosition[6][0] = new Knight(false, "g8", false);
-        // Bishop_black
         actPosition[2][0] = new Bishop(false, "c8", false);
         actPosition[5][0] = new Bishop(false, "f8", false);
-        // Queen_black
         actPosition[3][0] = new Queen(false, "d8", false);
-        // King_black
         actPosition[4][0] = new King(false, "e8", false);
 
-        // Pawn_white
+
         actPosition[0][6] = new Pawn(true, "a2", false);
         actPosition[1][6] = new Pawn(true, "b2", false);
         actPosition[2][6] = new Pawn(true, "c2", false);
@@ -644,18 +489,13 @@ public class PlayField {
         actPosition[5][6] = new Pawn(true, "f2", false);
         actPosition[6][6] = new Pawn(true, "g2", false);
         actPosition[7][6] = new Pawn(true, "h2", false);
-        // Rook_white
         actPosition[0][7] = new Rook(true, "a1", false);
         actPosition[7][7] = new Rook(true, "h1", false);
-        // Knight_white
         actPosition[1][7] = new Knight(true, "b1", false);
         actPosition[6][7] = new Knight(true, "g1", false);
-        // Bishop_white
         actPosition[2][7] = new Bishop(true, "c1", false);
         actPosition[5][7] = new Bishop(true, "f1", false);
-        // Queen_white
         actPosition[3][7] = new Queen(true, "d1", false);
-        // King_whit
         actPosition[4][7] = new King(true, "e1", false);
     }
 
@@ -692,7 +532,6 @@ public class PlayField {
     }
 
     public ChessPiece[][] getField() {
-        // returns the array
         return actPosition;
     }
 
@@ -734,6 +573,7 @@ public class PlayField {
         }
     }
 
+    //noch einbaun
     public boolean rochade(King k, Rook r) throws PositionException, FieldException {
 
         int xR = pos.xValue(r.getActPos());
@@ -797,9 +637,3 @@ public class PlayField {
     }
 }
 
-/*
- * System.out.println("Bishop block"); System.out.println("Yend: " + yEnd);
- * System.out.println("Ystart: " + yStart); System.out.println("Xend: " + xEnd);
- * System.out.println("Xstart: " + xStart);
- *
- */

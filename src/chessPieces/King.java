@@ -14,7 +14,6 @@ public class King extends ChessPiece {
     public King(boolean color, String start, boolean movedOnce) {
         super(color, start, movedOnce);
         setName("King");
-        System.out.println("King");
     }
 
     @Override

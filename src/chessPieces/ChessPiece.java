@@ -12,17 +12,14 @@ import model.Position;
 
 public abstract class ChessPiece {
 
-    // true for black an false for white
     private boolean colour;
     private boolean movedOnce;
 
-    //name
     private String name;
 
     //game over
     private boolean gameOver;
 
-    // like "g5"
     private String actPosition;
 
     public ChessPiece(boolean color, String actPosition, boolean movedOnce) {
@@ -43,12 +40,10 @@ public abstract class ChessPiece {
     }
 
     public String getActPos() {
-        // e3 = x=3 y=e e = 4
         return actPosition;
     }
 
     public void setActPos(String actPosition) {
-        // e3 = x=3 y=e e = 4
         this.actPosition = actPosition;
     }
 

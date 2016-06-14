@@ -14,7 +14,6 @@ public class Bishop extends ChessPiece {
     public Bishop(boolean color, String start, boolean movedOnce) {
         super(color, start, movedOnce);
         setName("Bishop");
-        System.out.println("Bishop");
     }
 
     @Override

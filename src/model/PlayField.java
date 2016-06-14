@@ -69,9 +69,13 @@ public class PlayField {
                                 } else if (!piece.getMovedOnce() && checkSpots(piece.getActPos(), end)) {
                                     // checked in theorie
                                     if ((yEnd - yStart) == 2 && xEnd == xStart) {
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
-                                        return true;
+                                        if(actPosition[xEnd][yEnd] == null) {
+                                            piece.setMovedOnce(true);
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
                                     } else {
                                         return false;
                                     }
@@ -111,9 +115,13 @@ public class PlayField {
                                     // checked in theorie
                                     if ((yEnd - yStart) == -2 && xEnd == xStart) {
                                         // two fields down
-                                        piece.setMovedOnce(true);
-                                        setColorChange(!getColorChange());
-                                        return true;
+                                        if(actPosition[xEnd][yEnd] == null) {
+                                            piece.setMovedOnce(true);
+                                            setColorChange(!getColorChange());
+                                            return true;
+                                        }else{
+                                            return false;
+                                        }
                                     } else {
                                         return false;
                                     }
@@ -701,6 +709,8 @@ public class PlayField {
         }
         return false;
     }
+
+
 
     public boolean getColorChange() {
         return colorChange;

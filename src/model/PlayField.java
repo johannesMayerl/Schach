@@ -708,21 +708,28 @@ public class PlayField {
     }
 
     //noch einbaun
-    public boolean pawnSpecial(ChessPiece changePiece){
-        if(changePiece.getName()=="Knight" || changePiece.getName()=="Queen" || changePiece.getName()=="Bishop" || changePiece.getName()=="Rook") {
-            for (int i = 0; i < actPosition.length; i++) {
-                if (actPosition[i][7].getColour() == false && actPosition[i][7].getName() == "Pawn") {
-                    actPosition[i][7] = changePiece;
-                    return true;
-                } else if (actPosition[i][0].getColour() == false && actPosition[i][0].getName() == "Pawn") {
-                    actPosition[i][0] = changePiece;
-                    return true;
-                }
+    public boolean pawnSpecial(ChessPiece changePiece, String end) throws PositionException {
+        int yEnd = pos.yValue(end);
+        int xEnd = pos.yValue(end);
+        if(changePiece instanceof Queen||changePiece instanceof Rook|| changePiece instanceof Bishop || changePiece instanceof Knight) {
+            if (yEnd == 7) {
+                changePiece.setActPos(end);
+                changePiece.setColour(false);
+                changePiece.setMovedOnce(true);
+                actPosition[xEnd][yEnd] = changePiece;
+                return true;
+            } else if (yEnd == 0) {
+                changePiece.setActPos(end);
+                changePiece.setColour(true);
+                changePiece.setMovedOnce(true);
+                actPosition[xEnd][yEnd] = changePiece;
+                return true;
+            } else {
+                return false;
             }
-        }else {
+        }else{
             return false;
         }
-        return false;
     }
 
     public boolean rochade(King k, Knight kt){

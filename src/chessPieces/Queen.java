@@ -19,6 +19,6 @@ public class Queen extends ChessPiece {
     @Override
     public String toString() {
 
-        return "Q" + getActPos();
+        return "Q"+ "/" + getActPos()+ "/";
     }
 }

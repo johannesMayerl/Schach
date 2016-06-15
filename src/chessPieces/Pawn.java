@@ -19,9 +19,9 @@ public class Pawn extends ChessPiece {
     @Override
     public String toString() {
         if (getMovedOnce() == true) {
-            return "p" + getActPos();
+            return "p"+ "/" + getActPos()+ "/";
         } else {
-            return "P" + getActPos();
+            return "P"+ "/" + getActPos()+ "/";
         }
     }
 }

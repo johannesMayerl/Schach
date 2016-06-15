@@ -1,11 +1,15 @@
 package viewcontrol;
 
+import model.SaveLoad;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class ArchiveListeners implements ActionListener {
 
 	private Archive panel;
+	private SaveLoad sv;
 
 	public ArchiveListeners(Archive archive) {
 		panel = archive;
@@ -13,6 +17,7 @@ public class ArchiveListeners implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		sv = new SaveLoad(panel.getFrame().getPanel4().getGame(), panel.getFrame().getPanel4());
 
 		Object source = e.getSource();
 
@@ -25,6 +30,13 @@ public class ArchiveListeners implements ActionListener {
 				System.out.println("Nothing selected to load!");
 			} else {
 				System.out.println(panel.getList().getSelectedValue().toString());
+				try {
+					sv.load(panel.getList().getSelectedValue().toString());
+					panel.getFrame().toggleArchive(false);
+					panel.getFrame().toggleMainGame(true);
+				} catch (IOException e1) {
+					e1.printStackTrace();
+				}
 			}
 
 		}

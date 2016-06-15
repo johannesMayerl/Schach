@@ -60,10 +60,11 @@ public class Frame extends JFrame {
 		BorderLayout b = new BorderLayout();
 		setLayout(b);
 
+		panel4 = new MainGame("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
 		panel1 = new MainMenu("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
 		panel2 = new Archive("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
 		panel3 = new Settings("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
-		panel4 = new MainGame("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
+
 
 		add(panel1);
 		add(panel2);
@@ -204,6 +205,11 @@ public class Frame extends JFrame {
 		gainControl.setValue(gainControl.getValue() + a);
 	}
 
+	public void updateArchive() {
+		panel2 = null;
+		panel2 = new Archive("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
+		add(panel2);
+	}
 	public void stopMusic() {
 		clip.stop();
 	}
@@ -211,5 +217,6 @@ public class Frame extends JFrame {
 	public void startMusic() {
 		clip.start();
 	}
+
 
 }

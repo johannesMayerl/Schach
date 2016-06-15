@@ -6,6 +6,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -14,13 +15,10 @@ import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingConstants;
+import javax.swing.*;
 
 import chessPieces.ChessPiece;
+import chessPieces.King;
 import model.ChessGame;
 
 public class MainGame extends JPanel {
@@ -34,6 +32,8 @@ public class MainGame extends JPanel {
 	private JPanel bottomBoard;
 	private BackButton back;
 	private BackButton backMove;
+	private JButton save;
+	private JTextField saveName;
 
 	private ChessGame game;
 	private ChessPiece currentFigure;
@@ -69,10 +69,6 @@ public class MainGame extends JPanel {
 		setLayout(new GridBagLayout());
 
 		GridBagConstraints gbc = new GridBagConstraints();
-
-		gbc.gridx = 2;
-		gbc.gridy = 1;
-		add(createTopPanel(), gbc);
 
 		gbc.gridx = 1;
 		gbc.gridy = 1;
@@ -315,26 +311,26 @@ public class MainGame extends JPanel {
 
 	public JPanel createBack() {
 		bottomBoard = new JPanel();
-		bottomBoard.setLayout(new GridLayout(1, 1));
-		bottomBoard.setOpaque(false);
-
-		backMove = new BackButton();
-		backMove.addActionListener(listener);
-		backMove.setVisible(true);
-		bottomBoard.add(backMove);
-
-		return bottomBoard;
-	}
-
-	public JPanel createTopPanel() {
-		bottomBoard = new JPanel();
-		bottomBoard.setLayout(new GridBagLayout());
+		bottomBoard.setLayout(new FlowLayout());
 		bottomBoard.setOpaque(false);
 
 		back = new BackButton();
+		save = new JButton("Save");
+		saveName = new JTextField();
+
+		save.setFont(new Font("Century", Font.BOLD, 35));
+		save.setSize(new Dimension(50, 25));
+
+		saveName.setFont(new Font("Century", Font.BOLD, 30));
+		saveName.setPreferredSize(new Dimension(300,50));
+
 		back.addActionListener(listener);
+		save.addActionListener(listener);
 		back.setVisible(true);
+		save.setVisible(true);
 		bottomBoard.add(back);
+		bottomBoard.add(save);
+		bottomBoard.add(saveName);
 
 		return bottomBoard;
 	}
@@ -359,8 +355,16 @@ public class MainGame extends JPanel {
 		}).start();
 	}
 
-	public void gameOver(){
+	public void gameOver(boolean b){
 		setGameOver(true);
+
+		if(b){
+			JOptionPane.showMessageDialog(null, "Game Over \nWhite Won");
+		}else{
+			JOptionPane.showMessageDialog(null, "Game Over \nBlack Won");
+		}
+
+		getFrame().toggleMainGame(false);
 	}
 
 	public Frame getFrame() {
@@ -485,5 +489,21 @@ public class MainGame extends JPanel {
 
 	public void setBackMove(BackButton backMove) {
 		this.backMove = backMove;
+	}
+
+	public JButton getSave() {
+		return save;
+	}
+
+	public void setSave(JButton save) {
+		this.save = save;
+	}
+
+	public JTextField getSaveName() {
+		return saveName;
+	}
+
+	public void setSaveName(JTextField saveName) {
+		this.saveName = saveName;
 	}
 }

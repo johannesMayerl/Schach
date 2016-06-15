@@ -61,7 +61,6 @@ public class Archive extends JPanel {
 		setSize(screenSize);
 
 		addFiles();
-
 	}
 
 	@Override
@@ -70,7 +69,7 @@ public class Archive extends JPanel {
 	}
 
 	public void addFiles() {
-
+		arl = new ArrayList<String>();
 		alisteners = new ArchiveListeners(this);
 
 		screenSize = Toolkit.getDefaultToolkit().getScreenSize();
@@ -231,6 +230,35 @@ public class Archive extends JPanel {
 			}
 		}).start();
 	}
+
+//	public void updateList(){
+//		File folder = new File("./saves");
+//		File[] listOfFiles = folder.listFiles();
+//
+//		for (File file : listOfFiles) {
+//			if (file.isFile()) {
+//				String[] a = file.getName().split("[.]");
+//				System.out.println(a[0]);
+//			}
+//		}
+//
+//		DefaultListModel<String> model = new DefaultListModel<String>();
+//		arl = new ArrayList<String>();
+//		for (String a : arl) {
+//			model.addElement(a);
+//			arl.add(a);
+//		}
+//
+//		list = new ArchiveList(model);
+//		list.setForeground(Color.WHITE);
+//		list.setSelectionBackground(Color.white);
+//		list.setSelectionForeground(Color.BLACK);
+//		list.setFont(new Font("Century", Font.BOLD, 35));
+//		list.setOpaque(false);
+//
+//		listScrollPane = new JScrollPane();
+//		listScrollPane.getViewport().setView(list);
+//	}
 
 	public ArrayList<String> getArl() {
 		return arl;

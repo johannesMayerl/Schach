@@ -21,7 +21,8 @@ public class MainMenuListeners implements ActionListener {
 		if (source == panel.getExit()) {
 			System.exit(0);
 		} else if (source == panel.getArchive()) {
-			panel.toggleArchive();
+			panel.getFrame().updateArchive();
+			panel.getFrame().toggleArchive(true);
 		} else if (source == panel.getSettings()) {
 			panel.toggleSettings();
 		} else if (source == panel.getNewGame()) {

@@ -19,9 +19,9 @@ public class King extends ChessPiece {
     @Override
     public String toString() {
         if (getMovedOnce() == true) {
-            return "k" + getActPos();
+            return "k" + "/" + getActPos()+ "/";
         } else {
-            return "K" + getActPos();
+            return "K"+ "/" + getActPos()+ "/";
         }
     }
 

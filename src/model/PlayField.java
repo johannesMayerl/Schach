@@ -507,7 +507,11 @@ public class PlayField {
 
                 if( actPosition[xEnd][yEnd] instanceof King){
                     System.out.println("Game Over");
-                    gameOver();
+                    if(actPosition[xEnd][yEnd].getColour()) {
+                        gameOver(true);
+                    }else{
+                        gameOver(false);
+                    }
                 }
 
                 actPosition[pos.xValue(piece.getActPos())][pos.yValue(piece.getActPos())] = null;
@@ -623,9 +627,8 @@ public class PlayField {
         return false;
     }
 
-    public void gameOver(){
-        System.out.println("PlayField");
-        getCg().getMg().gameOver();
+    public void gameOver(boolean b){
+        getCg().getMg().gameOver(b);
     }
 
     public boolean getColorChange() {

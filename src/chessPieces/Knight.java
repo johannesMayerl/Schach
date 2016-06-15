@@ -19,9 +19,9 @@ public class Knight extends ChessPiece {
     @Override
     public String toString() {
         if (getMovedOnce() == true) {
-            return "g" + getActPos();
+            return "g"+ "/" + getActPos()+ "/";
         } else {
-            return "G" + getActPos();
+            return "G"+ "/" + getActPos()+ "/";
         }
     }
 }

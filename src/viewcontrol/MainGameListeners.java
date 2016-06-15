@@ -4,12 +4,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.io.IOException;
+
 import chessPieces.ChessPiece;
-import exceptions.ChessPieceException;
 import exceptions.FieldException;
 import exceptions.PositionException;
 import model.BridgeFromFrontEndToBackEnd;
 import model.Position;
+import model.SaveLoad;
 
 /**
  * 
@@ -35,6 +37,20 @@ public class MainGameListeners implements ActionListener, MouseListener {
 			panel.getFrame().toggleMainGame(false);
 		} else if (source == panel.getBackMove()) {
 			panel.getGame().back();
+		}else
+		if(source == panel.getSave()){
+			System.out.println("Save BTN pressed!");
+			SaveLoad sl = new SaveLoad(panel.getGame(),panel);
+			try {
+				sl.save(panel.getSaveName().getText());
+			} catch (IOException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			} catch (FieldException e1) {
+				// TODO Auto-generated catch block
+				e1.printStackTrace();
+			}
+			panel.getSaveName().setText(null);
 		}
 	}
 

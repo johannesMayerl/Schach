@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
+    <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="Field works">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Bishop.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Bishop.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/ChessPiece.class" afterPath="$PROJECT_DIR$/bin/chessPieces/ChessPiece.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/King.class" afterPath="$PROJECT_DIR$/bin/chessPieces/King.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Knight.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Knight.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Pawn.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Pawn.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Queen.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Queen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/chessPieces/Rook.class" afterPath="$PROJECT_DIR$/bin/chessPieces/Rook.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/PlayField.class" afterPath="$PROJECT_DIR$/bin/model/PlayField.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/model/Position.class" afterPath="$PROJECT_DIR$/bin/model/Position.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Bishop.java" afterPath="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" afterPath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/King.java" afterPath="$PROJECT_DIR$/src/chessPieces/King.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Knight.java" afterPath="$PROJECT_DIR$/src/chessPieces/Knight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Pawn.java" afterPath="$PROJECT_DIR$/src/chessPieces/Pawn.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Queen.java" afterPath="$PROJECT_DIR$/src/chessPieces/Queen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Rook.java" afterPath="$PROJECT_DIR$/src/chessPieces/Rook.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/PlayField.java" afterPath="$PROJECT_DIR$/src/model/PlayField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Position.java" afterPath="$PROJECT_DIR$/src/model/Position.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,7 +34,18 @@
     <favorites_list name="Project_2015-16_POS" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="PlayField.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="569" column="5" selection-start-line="569" selection-start-column="5" selection-end-line="569" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,7 +74,6 @@
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
         <option value="$PROJECT_DIR$/src/model/ChessGame.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java" />
-        <option value="$PROJECT_DIR$/src/model/PlayField.java" />
         <option value="$PROJECT_DIR$/src/model/Position.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/Rook.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/Queen.java" />
@@ -72,6 +82,7 @@
         <option value="$PROJECT_DIR$/src/chessPieces/King.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
+        <option value="$PROJECT_DIR$/src/model/PlayField.java" />
       </list>
     </option>
   </component>
@@ -122,9 +133,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -156,63 +166,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="viewcontrol" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_2015-16_POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Schach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_2015-16_POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Schach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project_2015-16_POS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Schach" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="chessPieces" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -692,7 +649,9 @@
       <workItem from="1465882503291" duration="2834000" />
       <workItem from="1465891459979" duration="8921000" />
       <workItem from="1465900598739" duration="49000" />
-      <workItem from="1465923130897" duration="3816000" />
+      <workItem from="1465923130897" duration="5309000" />
+      <workItem from="1465966336350" duration="400000" />
+      <workItem from="1465969239542" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -869,11 +828,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465925873257</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Field works">
+      <created>1465926954613</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1465926954613</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40504000" />
+    <option name="totallyTimeSpent" value="42435000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -890,13 +856,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06659142" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16930023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5343348" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.53648067" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4828326" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.46566522" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4806867" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -906,12 +870,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16930023" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65124154" sideWeight="0.4635193" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18735892" sideWeight="0.49570817" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -947,7 +913,7 @@
         <state relative-caret-position="8624">
           <caret line="481" column="37" selection-start-line="481" selection-start-column="37" selection-end-line="481" selection-end-column="37" />
           <folding>
-            <element signature="e#12724#12725#0" expanded="true" />
+            <element signature="e#12724#12725#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -957,7 +923,7 @@
         <state relative-caret-position="616">
           <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -982,10 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14696">
           <caret line="679" column="29" selection-start-line="679" selection-start-column="29" selection-end-line="679" selection-end-column="29" />
-          <folding>
-            <element signature="e#25294#25295#0" expanded="true" />
-            <element signature="e#25328#25329#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -994,7 +957,7 @@
         <state relative-caret-position="8624">
           <caret line="481" column="37" selection-start-line="481" selection-start-column="37" selection-end-line="481" selection-end-column="37" />
           <folding>
-            <element signature="e#12724#12725#0" expanded="true" />
+            <element signature="e#12724#12725#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1004,7 +967,7 @@
         <state relative-caret-position="616">
           <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1029,10 +992,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25294#25295#0" expanded="true" />
-            <element signature="e#25328#25329#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,7 +1001,7 @@
         <state relative-caret-position="1144">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1050,10 +1010,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25294#25295#0" expanded="true" />
-            <element signature="e#25328#25329#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1019,7 @@
         <state relative-caret-position="1144">
           <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1071,10 +1028,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#25294#25295#0" expanded="true" />
-            <element signature="e#25328#25329#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +1044,7 @@
         <state relative-caret-position="1452">
           <caret line="75" column="25" selection-start-line="75" selection-start-column="25" selection-end-line="75" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1100,7 +1054,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#12724#12725#0" expanded="true" />
+            <element signature="e#12724#12725#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1244,41 +1198,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/BridgeFromFrontEndToBackEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="362" column="9" selection-start-line="362" selection-start-column="9" selection-end-line="362" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="809">
           <caret line="481" column="37" selection-start-line="481" selection-start-column="37" selection-end-line="481" selection-end-column="37" />
           <folding>
-            <element signature="e#12724#12725#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9944">
-          <caret line="463" column="9" selection-start-line="463" selection-start-column="9" selection-end-line="463" selection-end-column="9" />
-          <folding>
-            <element signature="e#25294#25295#0" expanded="true" />
-            <element signature="e#25328#25329#0" expanded="true" />
+            <element signature="e#12724#12725#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1358,6 +1283,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
           <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/BridgeFromFrontEndToBackEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7458">
+          <caret line="362" column="9" selection-start-line="362" selection-start-column="9" selection-end-line="362" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="37" column="8" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="569" column="5" selection-start-line="569" selection-start-column="5" selection-end-line="569" selection-end-column="5" />
           <folding />
         </state>
       </provider>

@@ -549,28 +549,36 @@ public class PlayField {
     }
 
     //noch einbaun
-    public boolean pawnSpecial(ChessPiece changePiece, String end) throws PositionException {
+    public void pawnChange(ChessPiece changePiece, String end) throws PositionException {
         int yEnd = pos.yValue(end);
         int xEnd = pos.yValue(end);
-        if(changePiece instanceof Queen||changePiece instanceof Rook|| changePiece instanceof Bishop || changePiece instanceof Knight) {
-            if (yEnd == 7) {
+        if (changePiece instanceof Queen || changePiece instanceof Rook || changePiece instanceof Bishop || changePiece instanceof Knight) {
+            if (yEnd == 0) {
                 changePiece.setActPos(end);
                 changePiece.setColour(false);
                 changePiece.setMovedOnce(true);
                 actPosition[xEnd][yEnd] = changePiece;
-                return true;
-            } else if (yEnd == 0) {
+            } else if (yEnd == 7) {
                 changePiece.setActPos(end);
                 changePiece.setColour(true);
                 changePiece.setMovedOnce(true);
                 actPosition[xEnd][yEnd] = changePiece;
-                return true;
-            } else {
-                return false;
             }
-        }else{
-            return false;
         }
+
+
+    }
+    //als condition für pawnChange
+    public boolean pawnChangeCondition(String end) throws PositionException {
+        int yEnd = pos.yValue(end);
+
+        if(yEnd == 0 ){
+            return true;
+        }else if(yEnd == 7){
+            return true;
+        }
+
+        return false;
     }
 
     //noch einbaun

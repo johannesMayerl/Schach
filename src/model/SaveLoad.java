@@ -38,6 +38,13 @@ public class SaveLoad {
 				}
 			}
 		}
+
+		if(currentGame.getBoard().getColorChange()){
+			bw.write("true");
+		}else{
+			bw.write("false");
+		}
+
 		bw.close();
 	}
 
@@ -85,7 +92,7 @@ public class SaveLoad {
 		boolean color = false;
 
 
-		for(int i = 0;i<nameWithPos.length;i++){
+		for(int i = 0;i < nameWithPos.length;i++){
 
 			if(nameWithPos[i].charAt(0)=='p'){
 				//pawn moved
@@ -110,6 +117,8 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
+					color = false;
+				}else{
 					color = true;
 				}
 
@@ -141,9 +150,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -175,9 +184,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -209,9 +218,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -243,9 +252,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -277,9 +286,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -311,9 +320,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -344,9 +353,9 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
@@ -377,24 +386,37 @@ public class SaveLoad {
 				posY = Character.getNumericValue(nameWithPos[i].charAt(3))-1;
 
 				if(nameWithPos[i].charAt(5)=='t'){
-					color = true;
-				}else{
 					color = false;
+				}else{
+					color = true;
 				}
 
 				String xy = String.valueOf(nameWithPos[i].charAt(2))+String.valueOf(posY+1);
 
 				cp[posX][posY] = new Rook(color, xy, false);
 			}
-		}
-		for (int i=0; i<lengthOfPf; i++){
-			for (int j =0; j<lengthOfPf; j++){
-				System.out.println(cp[i][j]+"\n"+"------------------------------");
+
+			if(i == nameWithPos.length){
+				if(nameWithPos[i] == "true"){
+					chessLoaded.getBoard().setColorChange(true);
+				}else{
+					chessLoaded.getBoard().setColorChange(false);
+				}
 			}
+
+
 		}
 
 		mainGame.setGame(null);
 		mainGame.setGame(chessLoaded);
+
+		mainGame.getFrame().getBridge().updateField();
+
+		for (int i=0; i<lengthOfPf; i++){
+			for (int j =0; j<lengthOfPf; j++){
+				System.out.println(mainGame.getGame().getBoard().getField()[i][j]+"\n"+"------------------------------");
+			}
+		}
 	}
 
 	public ChessGame getCurrentGame() {

@@ -573,13 +573,9 @@ public class PlayField {
     public boolean pawnChangeCondition(String end) throws PositionException {
         int yEnd = pos.yValue(end);
 
-        if(yEnd == 0 ){
+        if(yEnd == 0 || yEnd == 7 ){
             return true;
-        }else if(yEnd == 7){
-            return true;
-        }
-
-        return false;
+        }else return false;
     }
 
     //noch einbaun

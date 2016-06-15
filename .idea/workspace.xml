@@ -29,8 +29,8 @@
       <file leaf-file-name="PlayField.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1520">
-              <caret line="637" column="32" selection-start-line="637" selection-start-column="32" selection-end-line="637" selection-end-column="32" />
+            <state relative-caret-position="574">
+              <caret line="577" column="14" selection-start-line="577" selection-start-column="14" selection-end-line="577" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -705,7 +705,7 @@
       <workItem from="1465969239542" duration="12204000" />
       <workItem from="1465982503320" duration="2076000" />
       <workItem from="1465992126778" duration="1061000" />
-      <workItem from="1466012313262" duration="783000" />
+      <workItem from="1466012313262" duration="857000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -924,11 +924,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465992512510</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Everthing works&#10;     -load not fully tho&#10;">
+      <created>1466013110684</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1466013110684</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58521000" />
+    <option name="totallyTimeSpent" value="58595000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1697,8 +1704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1520">
-          <caret line="637" column="32" selection-start-line="637" selection-start-column="32" selection-end-line="637" selection-end-column="32" />
+        <state relative-caret-position="574">
+          <caret line="577" column="14" selection-start-line="577" selection-start-column="14" selection-end-line="577" selection-end-column="14" />
           <folding />
         </state>
       </provider>

@@ -557,16 +557,13 @@ public class PlayField {
         int yEnd = pos.yValue(end);
         int xEnd = pos.yValue(end);
         if (changePiece instanceof Queen || changePiece instanceof Rook || changePiece instanceof Bishop || changePiece instanceof Knight) {
+            changePiece.setActPos(end);
+            actPosition[xEnd][yEnd] = changePiece;
+
             if (yEnd == 0) {
-                changePiece.setActPos(end);
                 changePiece.setColour(false);
-                changePiece.setMovedOnce(true);
-                actPosition[xEnd][yEnd] = changePiece;
             } else if (yEnd == 7) {
-                changePiece.setActPos(end);
                 changePiece.setColour(true);
-                changePiece.setMovedOnce(true);
-                actPosition[xEnd][yEnd] = changePiece;
             }
         }
 
@@ -586,45 +583,66 @@ public class PlayField {
     }
 
     //noch einbaun
-    public boolean rochade(King k, Rook r) throws PositionException, FieldException {
-
-        int xR = pos.xValue(r.getActPos());
-        int xK = pos.xValue(k.getActPos());
+    public boolean rochade(ChessPiece k, ChessPiece r) throws PositionException, FieldException {
+        int xRook;
+        int xKing;
         int yCommon = pos.yValue(r.getActPos());
+        if(k.getColour() == r.getColour()) {
+            if (!k.getMovedOnce() && !r.getMovedOnce()) {
+                if (k instanceof King && r instanceof Rook) {
+                    xRook = pos.xValue(r.getActPos());
+                    xKing = pos.xValue(k.getActPos());
 
+                    if(xRook == 7){
+                        actPosition[xRook-2][yCommon] = r;
+                        r.setMovedOnce(true);
+                        actPosition[xRook][yCommon] = null;
 
-        if(k.getColour() == r.getColour()){
-            if(k.getMovedOnce() == false && r.getMovedOnce() == false){
-                if(yCommon == 0 || yCommon == 7) {
-                    if (xR == 7 || xR == 0) {
-                        if(checkSpots(r.getActPos(), k.getActPos())){
-                            actPosition[xR-2][yCommon] = r;
-                            r.setMovedOnce(true);
-                            actPosition[xR][yCommon] = null;
+                        actPosition[xKing+2][yCommon] = k;
+                        k.setMovedOnce(true);
+                        actPosition[xKing][yCommon] = null;
+                        return true;
+                    }else if(xRook == 0){
+                        actPosition[xRook+3][yCommon] = r;
+                        r.setMovedOnce(true);
+                        actPosition[xRook][yCommon] = null;
 
-                            actPosition[xK+2][yCommon] = k;
-                            k.setMovedOnce(true);
-                            actPosition[xK][yCommon] = null;
-
-                            return true;
-                        }
-                    } else if (xR == 0) {
-                        if(checkSpots(r.getActPos(), k.getActPos())){
-                            actPosition[xR+3][yCommon] = r;
-                            r.setMovedOnce(true);
-                            actPosition[xR][yCommon] = null;
-
-                            actPosition[xK-2][yCommon] = k;
-                            k.setMovedOnce(true);
-                            actPosition[xK][yCommon] = null;
-
-                            return true;
-                        }
+                        actPosition[xKing-2][yCommon] = k;
+                        k.setMovedOnce(true);
+                        actPosition[xKing][yCommon] = null;
+                        return true;
+                    }else{
+                        return false;
                     }
-                }
-            }
-        }
-        return false;
+                } else if (k instanceof Rook && r instanceof King) {
+                    xRook = pos.xValue(k.getActPos());
+                    xKing = pos.xValue(r.getActPos());
+
+                    if(xRook == 7){
+                        actPosition[xRook-2][yCommon] = k;
+                        k.setMovedOnce(true);
+                        actPosition[xRook][yCommon] = null;
+
+                        actPosition[xKing+2][yCommon] = r;
+                        r.setMovedOnce(true);
+                        actPosition[xKing][yCommon] = null;
+                        return true;
+                    }else if(xRook == 0){
+                        actPosition[xRook+3][yCommon] = k;
+                        k.setMovedOnce(true);
+                        actPosition[xRook][yCommon] = null;
+
+                        actPosition[xKing-2][yCommon] = r;
+                        r.setMovedOnce(true);
+                        actPosition[xKing][yCommon] = null;
+                        return true;
+                    }else{
+                        return false;
+                    }
+
+                }else return false;
+            }else return false;
+        }else return false;
     }
 
     public void gameOver(boolean b){

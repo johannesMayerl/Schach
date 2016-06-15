@@ -456,7 +456,7 @@ public class PlayField {
     }
 
     public void putPiecesOnStart() {
-
+        setColorChange(false);
         for (int i = 0; i < actPosition.length; i++) {
             for (int j = 0; j < actPosition[i].length; j++) {
                 actPosition[i][j] = null;

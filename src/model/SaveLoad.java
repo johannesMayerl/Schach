@@ -87,81 +87,71 @@ public class SaveLoad {
 				case 'P':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Pawn(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'p':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Pawn(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'R':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Rook(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'r':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Rook(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'K':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new King(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'k':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new King(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'G':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Knight(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'Q':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Queen(color, pos.fromINTtoString(x,y), false));
 
 					break;
 				case 'B':
 					if(namePosition[i].charAt(5) == 't'){
 						color = true;
-					}else{
-						color = false;
-					}
+					}else color = false;
+
 					field.addPiece(x,y, new Bishop(color, pos.fromINTtoString(x,y), false));
 					break;
 				default:
 					System.err.println("none of them used");
 					break;
 			}
-
 			if(i == namePosition.length){
 				if(Objects.equals(namePosition[i], "true")){
 					load.getBoard().setColorChange(true);

@@ -91,14 +91,6 @@ public class Position {
         }
     }
 
-    public boolean trueOrFalse(String value) throws GameExceptions {
-        if(value.charAt(5) == 't'){
-            return true;
-        }else if(value.charAt(5) == 'f'){
-            return false;
-        }else throw new GameExceptions("Saved data is wrong");
-    }
-
     public int xValue(String pos) throws PositionException {
         if(pos == null)throw new PositionException("The String pos in the method 'yValue' must not be null!");
 

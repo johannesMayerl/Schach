@@ -87,7 +87,6 @@ public class SaveLoad {
 				pieces[i][j] = null;
 			}
 		}
-
 			int x;
 			int y;
 			boolean color;
@@ -95,42 +94,34 @@ public class SaveLoad {
 		for(int i = 0;i < namePosition.length;i++){
 			x = pos.xValueLoad(namePosition[i]);
 			y = pos.yValueLoad(namePosition[i]);
+			color = namePosition[i].charAt(5) != 't';
 
 			switch (namePosition[i].charAt(0)){
 				case 'P':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Pawn(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'p':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Pawn(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'R':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Rook(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'r':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Rook(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'K':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new King(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'k':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new King(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'G':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Knight(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'Q':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Queen(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'B':
-					color = namePosition[i].charAt(5) != 't';
 					field.addPiece(x,y, new Bishop(color, pos.fromINTtoString(x,y), false));
 					break;
 				default:
@@ -147,7 +138,6 @@ public class SaveLoad {
 			}
 		}
 			load.setBoard(field);
-
 			mainGame.setGame(null);
 			mainGame.setGame(load);
 			mainGame.getFrame().getBridge().updateField();

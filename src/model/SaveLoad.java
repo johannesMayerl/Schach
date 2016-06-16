@@ -18,7 +18,6 @@ import viewcontrol.MainGame;
  * Created by Noah on 02.06.2016.
  */
 public class SaveLoad {
-
 	private ChessGame currentGame;
 	private MainGame mainGame;
 	private PlayField field;

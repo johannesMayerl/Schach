@@ -16,7 +16,6 @@ import viewcontrol.MainGame;
 
 /**
  * Created by Noah on 02.06.2016.
- * Erweitert bzw. komplett gemacht von Thomas Görlich
  */
 public class SaveLoad {
 
@@ -34,36 +33,25 @@ public class SaveLoad {
 	}
 
 	public void save(String savename) throws IOException, FieldException {
-		int lengthOfPf = currentGame.getBoard().getField().length;
+		ChessPiece[][] cp = currentGame.getBoard().getField();
+
 		File file = new File("./Saves/"+savename+".save");
 		BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-		for (int i=0; i<lengthOfPf; i++){
-			for (int j =0; j<lengthOfPf; j++){
-				ChessPiece[][] cp = currentGame.getBoard().getField();
+
+		for (int i=0; i < cp.length; i++){
+			for (int j =0; j<cp[i].length; j++){
 				if(cp[i][j]!=null){
 					bw.write(cp[i][j].toString()+cp[i][j].getColour()+";");
 				}
 			}
 		}
-
 		if(currentGame.getBoard().getColorChange()){
 			bw.write("true");
 		}else{
 			bw.write("false");
 		}
-
 		bw.close();
 	}
-
-	/*
-	 *
-	 * Wenn man die geladenen Sachen aus der Datei hat ist das erste der Name der Figur, das
-	 * zweite die Position, das dritte die Farbe. Ob der Buchstabe klein oder groß ist hängt
-	 * davon ab ob die Figur schon gefahren ist oder nicht!
-	 * Bsp.: P/e4/true oder
-	 * 		 p/e4/true
-	 *
-	 * */
 
 	public void loadGame(String savedGame) throws IOException, GameExceptions {
 		String []namePosition;
@@ -94,34 +82,79 @@ public class SaveLoad {
 		for(int i = 0;i < namePosition.length;i++){
 			x = pos.xValueLoad(namePosition[i]);
 			y = pos.yValueLoad(namePosition[i]);
-			color = namePosition[i].charAt(5) != 't';
 
 			switch (namePosition[i].charAt(0)){
 				case 'P':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Pawn(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'p':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Pawn(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'R':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Rook(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'r':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Rook(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'K':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new King(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'k':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new King(color, pos.fromINTtoString(x,y), true));
 					break;
 				case 'G':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Knight(color, pos.fromINTtoString(x,y), false));
 					break;
 				case 'Q':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Queen(color, pos.fromINTtoString(x,y), false));
+
 					break;
 				case 'B':
+					if(namePosition[i].charAt(5) == 't'){
+						color = true;
+					}else{
+						color = false;
+					}
 					field.addPiece(x,y, new Bishop(color, pos.fromINTtoString(x,y), false));
 					break;
 				default:

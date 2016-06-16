@@ -144,7 +144,27 @@ public class Position {
             returnValue = "h";
         }
 
-        return returnValue + y;
+        String yV = null;
+
+        if(y == 0){
+            yV = "8";
+        }else if(y == 1){
+            yV = "7";
+        } else if(y == 2){
+            yV = "6";
+        } else if(y == 3){
+            yV = "5";
+        } else if(y == 4){
+            yV = "4";
+        } else if(y == 5){
+            yV = "3";
+        } else if(y == 6){
+            yV = "2";
+        } else if(y == 7){
+            yV = "1";
+        }
+
+        return returnValue + yV;
     }
 
     public int getxValue() {

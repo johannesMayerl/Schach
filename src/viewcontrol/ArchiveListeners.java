@@ -1,5 +1,6 @@
 package viewcontrol;
 
+import exceptions.GameExceptions;
 import model.SaveLoad;
 
 import java.awt.event.ActionEvent;
@@ -36,6 +37,8 @@ public class ArchiveListeners implements ActionListener {
 					panel.getFrame().toggleMainGame(true);
 				} catch (IOException e1) {
 					e1.printStackTrace();
+				} catch (GameExceptions gameExceptions) {
+					gameExceptions.printStackTrace();
 				}
 			}
 

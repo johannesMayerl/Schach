@@ -457,11 +457,7 @@ public class PlayField {
 
     public void putPiecesOnStart() {
         setColorChange(false);
-        for (int i = 0; i < actPosition.length; i++) {
-            for (int j = 0; j < actPosition[i].length; j++) {
-                actPosition[i][j] = null;
-            }
-        }
+        setToNULL();
 
         actPosition[0][1] = new Pawn(false, "a7", false);
         actPosition[1][1] = new Pawn(false, "b7", false);
@@ -639,6 +635,18 @@ public class PlayField {
                 }else return false;
             }else return false;
         }else return false;
+    }
+
+    public void addPiece(int x, int y, ChessPiece piece){
+        actPosition[x][y] = piece;
+    }
+
+    public void setToNULL(){
+        for(int i = 0; i < actPosition.length; i++){
+            for(int j = 0; j < actPosition[i].length; j++){
+                actPosition[i][j] = null;
+            }
+        }
     }
 
     public void gameOver(boolean b){

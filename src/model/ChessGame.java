@@ -28,9 +28,9 @@ public class ChessGame {
 	}
 
 	public PlayField getBoard() {
-
 		return board;
 	}
+
 	public void setBoard(PlayField board) throws GameExceptions {
 		if (board == null)
 			throw new GameExceptions("Board in the method 'setBoard' must not be null!");

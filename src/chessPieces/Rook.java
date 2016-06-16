@@ -18,7 +18,10 @@ public class Rook extends ChessPiece {
 
     @Override
     public String toString() {
-
-        return "R"+ "/" + getActPos()+ "/";
+        if (getMovedOnce() == true) {
+            return "r"+ "/" + getActPos()+ "/";
+        } else {
+            return "R"+ "/" + getActPos()+ "/";
+        }
     }
 }

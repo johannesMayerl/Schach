@@ -32,13 +32,11 @@ public class ArchiveListeners implements ActionListener {
 			} else {
 				System.out.println(panel.getList().getSelectedValue().toString());
 				try {
-					sv.load(panel.getList().getSelectedValue().toString());
+					sv.loadGame(panel.getList().getSelectedValue().toString());
 					panel.getFrame().toggleArchive(false);
 					panel.getFrame().toggleMainGame(true);
-				} catch (IOException e1) {
+				} catch (IOException | GameExceptions e1) {
 					e1.printStackTrace();
-				} catch (GameExceptions gameExceptions) {
-					gameExceptions.printStackTrace();
 				}
 			}
 

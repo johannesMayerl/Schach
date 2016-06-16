@@ -47,21 +47,21 @@ public class Position {
 
     public int yValueLoad(String value){
         int returnValueX;
-        if(Integer.parseInt(String.valueOf(value.charAt(3))) == 8){
+        if(value.charAt(3) == '8'){
             returnValueX = 0;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 7){
+        }else if(value.charAt(3) == '7'){
             returnValueX = 1;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 6){
+        }else if(value.charAt(3) == '6'){
             returnValueX = 2;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 5){
+        }else if(value.charAt(3) == '5'){
             returnValueX = 3;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 4){
+        }else if(value.charAt(3) == '4'){
             returnValueX = 4;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 3){
+        }else if(value.charAt(3) == '3'){
             returnValueX = 5;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 2){
+        }else if(value.charAt(3) == '2'){
             returnValueX = 6;
-        }else if(Integer.parseInt(String.valueOf(value.charAt(3))) == 1){
+        }else if(value.charAt(3) == '1'){
             returnValueX = 7;
         }else {
             return -999;
@@ -138,13 +138,13 @@ public class Position {
             returnValue = "e";
         }else if(x == 5){
             returnValue = "f";
-        }else if(x == 5){
-            returnValue = "g";
         }else if(x == 6){
+            returnValue = "g";
+        }else if(x == 7){
             returnValue = "h";
         }
 
-        return returnValue+y;
+        return returnValue + y;
     }
 
     public int getxValue() {

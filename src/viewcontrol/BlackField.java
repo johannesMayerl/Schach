@@ -73,7 +73,6 @@ public class BlackField extends FieldWrapper {
 	}
 
 	public void blackFieldBig(String path) {
-		System.out.println("Test");
 		this.setPreferredSize(new Dimension(170, 170));
 		img = new ImageIcon(path);
 		this.setIcon(img);

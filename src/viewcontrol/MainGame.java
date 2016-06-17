@@ -32,7 +32,7 @@ public class MainGame extends JPanel {
 	private JPanel bottomBoard;
 	private BackButton back;
 	private BackButton backMove;
-	private JButton save;
+	private SaveButton save;
 	private JTextField saveName;
 
 	private ChessGame game;
@@ -315,22 +315,16 @@ public class MainGame extends JPanel {
 		bottomBoard.setOpaque(false);
 
 		back = new BackButton();
-		save = new JButton("Save");
-		saveName = new JTextField();
-
-		save.setFont(new Font("Century", Font.BOLD, 35));
-		save.setSize(new Dimension(50, 25));
-
-		saveName.setFont(new Font("Century", Font.BOLD, 30));
-		saveName.setPreferredSize(new Dimension(300,50));
+		save = new SaveButton();
 
 		back.addActionListener(listener);
 		save.addActionListener(listener);
+
 		back.setVisible(true);
 		save.setVisible(true);
+
 		bottomBoard.add(back);
 		bottomBoard.add(save);
-		bottomBoard.add(saveName);
 
 		return bottomBoard;
 	}
@@ -491,11 +485,11 @@ public class MainGame extends JPanel {
 		this.backMove = backMove;
 	}
 
-	public JButton getSave() {
+	public SaveButton getSave() {
 		return save;
 	}
 
-	public void setSave(JButton save) {
+	public void setSave(SaveButton save) {
 		this.save = save;
 	}
 

@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/viewcontrol/SavePopup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/viewcontrol/MainGame.java" afterPath="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/viewcontrol/SaveButton.java" afterPath="$PROJECT_DIR$/src/viewcontrol/SaveButton.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,8 +57,8 @@
       <file leaf-file-name="SavePopup.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/viewcontrol/SavePopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69756097">
-              <caret line="26" column="0" selection-start-line="24" selection-start-column="5" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6707317">
+              <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -806,7 +803,7 @@
       <workItem from="1466079274270" duration="2771000" />
       <workItem from="1466090123433" duration="2935000" />
       <workItem from="1466093400097" duration="216000" />
-      <workItem from="1466147292184" duration="6073000" />
+      <workItem from="1466147292184" duration="6351000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -1066,11 +1063,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466151757780</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Missing:&#10;-implement rochade + pawn-special&#10;&#10;Completed:&#10;-save and load">
+      <created>1466158638406</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1466158638406</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83077000" />
+    <option name="totallyTimeSpent" value="83355000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1762,8 +1765,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/SavePopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69756097">
-          <caret line="26" column="0" selection-start-line="24" selection-start-column="5" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6707317">
+          <caret line="25" column="1" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

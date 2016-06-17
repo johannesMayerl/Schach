@@ -19,10 +19,10 @@ public class SaveButton extends JButton {
 
 		if (screenSize.getWidth() > 1920 && screenSize.getHeight() > 1080) {
 			is4K = true;
-			backButtonBig("./textures/Buttons/Settings/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
+			backButtonBig("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
 		} else {
 			is4K = false;
-			backButtonSmall("./textures/Buttons/Settings/2015_16_Semesterprojekt_POS_Archive_Save_Button_FullHD.png");
+			backButtonSmall("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_FullHD.png");
 		}
 
 	}
@@ -78,18 +78,18 @@ public class SaveButton extends JButton {
 	public void toggleHover(boolean isToggled) {
 		if (is4K) {
 			if (isToggled) {
-				img = new ImageIcon("./textures/Buttons/Settings/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
+				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
 				this.setIcon(img);
 			} else {
-				img = new ImageIcon("./textures/Buttons/Settings/2015_16_Semesterprojekt_POS_Archive_Save_Button_Hover.png");
+				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_Hover.png");
 				this.setIcon(img);
 			}
 		} else {
 			if (isToggled) {
-				img = new ImageIcon("./textures/Buttons/Settings/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
+				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
 				this.setIcon(img);
 			} else {
-				img = new ImageIcon("./textures/Buttons/Settings/2015_16_Semesterprojekt_POS_Archive_Save_Button_fullHD_Hover.png");
+				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_fullHD_Hover.png");
 				this.setIcon(img);
 			}
 		}

@@ -311,7 +311,15 @@ public class MainGame extends JPanel {
 
 	public JPanel createBack() {
 		bottomBoard = new JPanel();
-		bottomBoard.setLayout(new FlowLayout());
+		FlowLayout fl = new FlowLayout();
+
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+		if (screenSize.getWidth() > 1920 && screenSize.getHeight() > 1080){
+			fl.setHgap(50);
+		}else{
+			fl.setHgap(10);
+		}
+		bottomBoard.setLayout(fl);
 		bottomBoard.setOpaque(false);
 
 		back = new BackButton();

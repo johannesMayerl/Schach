@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Delte_Button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Delte_Button_FullHD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Delte_Button_FullHD_Hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Delte_Button_Hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_FullHD.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_FullHD_Hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_Hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/viewcontrol/SaveButton.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/viewcontrol/SavePopup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame$1.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGameListeners.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGameListeners.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/viewcontrol/MainGame.java" afterPath="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/viewcontrol/SaveButton.java" afterPath="$PROJECT_DIR$/src/viewcontrol/SaveButton.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,48 +40,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WhiteField.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewcontrol/WhiteField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MainGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.45283">
-              <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.4905663">
+              <caret line="317" column="20" selection-start-line="317" selection-start-column="20" selection-end-line="317" selection-end-column="20" />
               <folding>
-                <element signature="e#10609#10610#0" expanded="true" />
-                <element signature="e#10628#10629#0" expanded="true" />
-                <element signature="e#12767#12768#0" expanded="true" />
-                <element signature="e#12785#12786#0" expanded="true" />
-                <element signature="e#12826#12827#0" expanded="true" />
-                <element signature="e#12849#12850#0" expanded="true" />
+                <element signature="e#10823#10824#0" expanded="true" />
+                <element signature="e#10842#10843#0" expanded="true" />
+                <element signature="e#12981#12982#0" expanded="true" />
+                <element signature="e#12999#13000#0" expanded="true" />
+                <element signature="e#13040#13041#0" expanded="true" />
+                <element signature="e#13063#13064#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Archive.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewcontrol/Archive.java">
+      <file leaf-file-name="SavePopup.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/viewcontrol/SavePopup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="21" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
-              <folding />
+            <state vertical-scroll-proportion="0.69756097">
+              <caret line="26" column="0" selection-start-line="24" selection-start-column="5" selection-end-line="26" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveButton.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SaveButton.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/viewcontrol/SaveButton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.026829269">
-              <caret line="24" column="104" selection-start-line="24" selection-start-column="104" selection-end-line="24" selection-end-column="104" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -142,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/model/SaveLoad.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/SaveButton.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
+        <option value="$PROJECT_DIR$/src/viewcontrol/SavePopup.java" />
       </list>
     </option>
   </component>
@@ -822,7 +806,7 @@
       <workItem from="1466079274270" duration="2771000" />
       <workItem from="1466090123433" duration="2935000" />
       <workItem from="1466093400097" duration="216000" />
-      <workItem from="1466147292184" duration="4026000" />
+      <workItem from="1466147292184" duration="6073000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1465799900273</created>
@@ -1076,11 +1060,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466148067313</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Missing:&#10;-implement rochade + pawn-special&#10;&#10;Completed:&#10;-save and load">
+      <created>1466151757780</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1466151757780</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81030000" />
+    <option name="totallyTimeSpent" value="83077000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1725,8 +1715,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/WhiteField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.2951219">
           <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/Archive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.99268293">
+          <caret line="152" column="21" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/SaveButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
           <folding />
         </state>
       </provider>
@@ -1741,32 +1747,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.45283">
-          <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.4905663">
+          <caret line="317" column="20" selection-start-line="317" selection-start-column="20" selection-end-line="317" selection-end-column="20" />
           <folding>
-            <element signature="e#10609#10610#0" expanded="true" />
-            <element signature="e#10628#10629#0" expanded="true" />
-            <element signature="e#12767#12768#0" expanded="true" />
-            <element signature="e#12785#12786#0" expanded="true" />
-            <element signature="e#12826#12827#0" expanded="true" />
-            <element signature="e#12849#12850#0" expanded="true" />
+            <element signature="e#10823#10824#0" expanded="true" />
+            <element signature="e#10842#10843#0" expanded="true" />
+            <element signature="e#12981#12982#0" expanded="true" />
+            <element signature="e#12999#13000#0" expanded="true" />
+            <element signature="e#13040#13041#0" expanded="true" />
+            <element signature="e#13063#13064#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/Archive.java">
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/SavePopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="21" selection-start-line="152" selection-start-column="21" selection-end-line="152" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/SaveButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.026829269">
-          <caret line="24" column="104" selection-start-line="24" selection-start-column="104" selection-end-line="24" selection-end-column="104" />
-          <folding />
+        <state vertical-scroll-proportion="0.69756097">
+          <caret line="26" column="0" selection-start-line="24" selection-start-column="5" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -151,13 +151,12 @@ public class SaveLoad {
 					System.err.println("none of them used");
 					break;
 			}
-			if(i == namePosition.length){
-				if(Objects.equals(namePosition[i], "true")){
-					load.getBoard().setColorChange(true);
-				}else{
-					load.getBoard().setColorChange(false);
-				}
-			}
+		}
+
+		if(line.endsWith("true")){
+			field.setColorChange(true);
+		}else {
+			field.setColorChange(false);
 		}
 			load.setBoard(field);
 			mainGame.setGame(null);

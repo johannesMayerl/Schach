@@ -86,7 +86,7 @@ public class SaveButton extends JButton {
 			}
 		} else {
 			if (isToggled) {
-				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button.png");
+				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_fullHD.png");
 				this.setIcon(img);
 			} else {
 				img = new ImageIcon("./textures/Archive/2015_16_Semesterprojekt_POS_Archive_Save_Button_fullHD_Hover.png");

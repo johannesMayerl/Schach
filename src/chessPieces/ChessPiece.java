@@ -14,7 +14,6 @@ public abstract class ChessPiece {
 
     private boolean colour;
     private boolean movedOnce;
-
     private String name;
 
     //game over

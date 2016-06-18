@@ -13,6 +13,10 @@ import java.util.Random;
 public class Bot {
     private boolean color;
     private Position pos;
+
+    private ChessPiece chosenPiece;
+    private String chosenEND;
+
     private ArrayList<ChessPiece> possiblePieces;
 
     private Bot(PlayField field){
@@ -30,14 +34,17 @@ public class Bot {
     }
 
     public boolean validateMove(PlayField field) throws FieldException, PositionException {
-        if(field.validMove(chooseEndPosition(), choosePiece())){
+        if(field.validMove(chooseEndPosition(),choosePiece())){
             return true;
-        }else return false;
+        }else{
+            return false;
+        }
     }
 
     public ChessPiece choosePiece(){
         Random rn = new Random();
         int piece = rn.nextInt(possiblePieces.size());
+        setChosenPiece(possiblePieces.get(piece));
 
         return possiblePieces.get(piece);
     }
@@ -50,6 +57,7 @@ public class Bot {
         int yV = xyValue.nextInt(8);
 
         xy = pos.fromINTtoString(xV,yV);
+        setChosenEND(xy);
         return xy;
     }
 
@@ -57,7 +65,7 @@ public class Bot {
         if(!validateMove(field)){
             move(field);
         }else{
-            field.move(chooseEndPosition(), choosePiece());
+            field.move(getChosenEND(), getChosenPiece());
         }
     }
 
@@ -75,5 +83,21 @@ public class Bot {
 
     public void setColor(boolean color) {
         this.color = color;
+    }
+
+    public ChessPiece getChosenPiece() {
+        return chosenPiece;
+    }
+
+    public void setChosenPiece(ChessPiece chosenPiece) {
+        this.chosenPiece = chosenPiece;
+    }
+
+    public String getChosenEND() {
+        return chosenEND;
+    }
+
+    public void setChosenEND(String chosenEND) {
+        this.chosenEND = chosenEND;
     }
 }

@@ -15,19 +15,11 @@ public class Bot {
     private Position pos;
     private ArrayList<ChessPiece> possiblePieces;
 
-    private Bot(){
+    private Bot(PlayField field){
         this.color = false;
         pos = new Position();
         possiblePieces = new ArrayList<>();
-    }
 
-    public boolean validateMove(PlayField field) throws FieldException, PositionException {
-        if(field.validMove(chooseEndPosition(), choosePiece(field))){
-            return true;
-        }else return false;
-    }
-
-    public ChessPiece choosePiece(PlayField field){
         for(int i = 0; i < field.getField().length; i++){
             for(int j = 0; j < field.getField()[i].length; j++){
                 if(field.getField()[i][j].getColour() == color){
@@ -35,7 +27,15 @@ public class Bot {
                 }
             }
         }
+    }
 
+    public boolean validateMove(PlayField field) throws FieldException, PositionException {
+        if(field.validMove(chooseEndPosition(), choosePiece())){
+            return true;
+        }else return false;
+    }
+
+    public ChessPiece choosePiece(){
         Random rn = new Random();
         int piece = rn.nextInt(possiblePieces.size());
 
@@ -44,8 +44,8 @@ public class Bot {
 
     public String chooseEndPosition(){
         String xy;
-
         Random xyValue = new Random();
+
         int xV = xyValue.nextInt(8);
         int yV = xyValue.nextInt(8);
 
@@ -57,7 +57,7 @@ public class Bot {
         if(!validateMove(field)){
             move(field);
         }else{
-            field.move(chooseEndPosition(), choosePiece(field));
+            field.move(chooseEndPosition(), choosePiece());
         }
     }
 

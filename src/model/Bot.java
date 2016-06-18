@@ -53,6 +53,14 @@ public class Bot {
         return xy;
     }
 
+    public void move(PlayField field) throws FieldException, PositionException {
+        if(!validateMove(field)){
+            move(field);
+        }else{
+            field.move(chooseEndPosition(), choosePiece(field));
+        }
+    }
+
     public ArrayList<ChessPiece> getPossiblePieces() {
         return possiblePieces;
     }

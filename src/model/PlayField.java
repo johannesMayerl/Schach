@@ -6,6 +6,7 @@ import exceptions.PositionException;
 
 import javax.swing.*;
 import javax.swing.plaf.ColorUIResource;
+import javax.swing.plaf.synth.Region;
 import java.awt.*;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -648,6 +649,7 @@ public class PlayField {
             }
         }
     }
+
 
     public void gameOver(boolean b){
         getCg().getMg().gameOver(b);

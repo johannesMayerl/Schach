@@ -34,11 +34,7 @@ public class Bot {
     }
 
     public boolean validateMove(PlayField field) throws FieldException, PositionException {
-        if(field.validMove(chooseEndPosition(),choosePiece())){
-            return true;
-        }else{
-            return false;
-        }
+        return  field.validMove(chooseEndPosition(),choosePiece());
     }
 
     public ChessPiece choosePiece(){
@@ -61,9 +57,9 @@ public class Bot {
         return xy;
     }
 
-    public void move(PlayField field) throws FieldException, PositionException {
+    public void moveBot(PlayField field) throws FieldException, PositionException {
         if(!validateMove(field)){
-            move(field);
+            moveBot(field);
         }else{
             field.move(getChosenEND(), getChosenPiece());
         }

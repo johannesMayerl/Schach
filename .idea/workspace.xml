@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Bishop.java" afterPath="$PROJECT_DIR$/src/chessPieces/Bishop.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" afterPath="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/King.java" afterPath="$PROJECT_DIR$/src/chessPieces/King.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/chessPieces/Queen.java" afterPath="$PROJECT_DIR$/src/chessPieces/Queen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Bot.java" afterPath="$PROJECT_DIR$/src/model/Bot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/PlayField.java" afterPath="$PROJECT_DIR$/src/model/PlayField.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,18 +30,28 @@
       <file leaf-file-name="Bot.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/Bot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="242">
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
-                <element signature="e#2206#2207#0" expanded="true" />
-                <element signature="e#2240#2241#0" expanded="true" />
-                <element signature="e#2298#2299#0" expanded="true" />
-                <element signature="e#2344#2345#0" expanded="true" />
-                <element signature="e#2380#2381#0" expanded="true" />
-                <element signature="e#2412#2413#0" expanded="true" />
-                <element signature="e#2462#2463#0" expanded="true" />
-                <element signature="e#2504#2505#0" expanded="true" />
+                <element signature="e#2136#2137#0" expanded="true" />
+                <element signature="e#2170#2171#0" expanded="true" />
+                <element signature="e#2228#2229#0" expanded="true" />
+                <element signature="e#2274#2275#0" expanded="true" />
+                <element signature="e#2310#2311#0" expanded="true" />
+                <element signature="e#2342#2343#0" expanded="true" />
+                <element signature="e#2392#2393#0" expanded="true" />
+                <element signature="e#2434#2435#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayField.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9157">
+              <caret line="651" column="0" selection-start-line="651" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,7 +88,6 @@
         <option value="$PROJECT_DIR$/src/viewcontrol/Archive.java" />
         <option value="$PROJECT_DIR$/Saves/Test.save" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java" />
-        <option value="$PROJECT_DIR$/src/model/PlayField.java" />
         <option value="$PROJECT_DIR$/src/model/ChessGame.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/Knight.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/ArchiveListeners.java" />
@@ -97,6 +103,7 @@
         <option value="$PROJECT_DIR$/src/chessPieces/Queen.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/Rook.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
+        <option value="$PROJECT_DIR$/src/model/PlayField.java" />
         <option value="$PROJECT_DIR$/src/model/Bot.java" />
       </list>
     </option>
@@ -729,14 +736,7 @@
       <workItem from="1466249158067" duration="1421000" />
       <workItem from="1466250591246" duration="30000" />
       <workItem from="1466250632300" duration="29000" />
-      <workItem from="1466263969079" duration="1570000" />
-    </task>
-    <task id="LOCAL-00001" summary="Test">
-      <created>1465799900273</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1465799900273</updated>
+      <workItem from="1466263969079" duration="2778000" />
     </task>
     <task id="LOCAL-00002" summary="Test">
       <created>1465800339070</created>
@@ -1074,11 +1074,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466264248069</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Missing:&#10;-implement rochade + pawn-special&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;-Bot">
+      <created>1466265544817</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1466265544818</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86405000" />
+    <option name="totallyTimeSpent" value="87613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1740,14 +1747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="462" column="48" selection-start-line="462" selection-start-column="44" selection-end-line="462" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chessPieces/ChessPiece.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1788,19 +1787,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9157">
+          <caret line="651" column="0" selection-start-line="651" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Bot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="242">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
-            <element signature="e#2206#2207#0" expanded="true" />
-            <element signature="e#2240#2241#0" expanded="true" />
-            <element signature="e#2298#2299#0" expanded="true" />
-            <element signature="e#2344#2345#0" expanded="true" />
-            <element signature="e#2380#2381#0" expanded="true" />
-            <element signature="e#2412#2413#0" expanded="true" />
-            <element signature="e#2462#2463#0" expanded="true" />
-            <element signature="e#2504#2505#0" expanded="true" />
+            <element signature="e#2136#2137#0" expanded="true" />
+            <element signature="e#2170#2171#0" expanded="true" />
+            <element signature="e#2228#2229#0" expanded="true" />
+            <element signature="e#2274#2275#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+            <element signature="e#2342#2343#0" expanded="true" />
+            <element signature="e#2392#2393#0" expanded="true" />
+            <element signature="e#2434#2435#0" expanded="true" />
           </folding>
         </state>
       </provider>

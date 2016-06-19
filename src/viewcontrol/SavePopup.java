@@ -29,7 +29,7 @@ public class SavePopup extends JPanel{
             input.setPreferredSize(new Dimension(1000,100));
             input.setFont(new Font("Century", 0, 50));
         }else{
-            input.setPreferredSize(new Dimension(500,50));
+            input.setPreferredSize(new Dimension(500,40));
             input.setFont(new Font("Century", 0, 25));
         }
 

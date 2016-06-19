@@ -516,7 +516,7 @@ public class PlayField {
                 int yEnd = pos.yValue(position);
 
                 //game Over situation
-                if( actPosition[xEnd][yEnd] instanceof King){
+                if( actPosition[xEnd][yEnd] instanceof King && piece.getColour() != actPosition[xEnd][yEnd].getColour()){
                     System.out.println("Game Over");
                     if(actPosition[xEnd][yEnd].getColour()) {
                         gameOver(true);
@@ -589,6 +589,7 @@ public class PlayField {
 
 
     }
+
     //als condition für pawnChange
     public boolean pawnChangeCondition(String end) throws PositionException {
         int yEnd = pos.yValue(end);

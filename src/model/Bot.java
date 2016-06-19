@@ -12,8 +12,8 @@ import java.util.Random;
  */
 public class Bot {
     private boolean color;
-    private Position pos;
 
+    private Position pos;
     private ChessPiece chosenPiece;
     private String chosenEND;
 
@@ -63,6 +63,23 @@ public class Bot {
         }else{
             field.move(getChosenEND(), getChosenPiece());
         }
+    }
+
+    public ChessPiece calculatePiece(PlayField field) throws FieldException, PositionException {
+        if(field.validMove(getChosenEND(), getChosenPiece())){
+            return  getChosenPiece();
+        }else if(!field.validMove(getChosenEND(), getChosenPiece())){
+            for(int i = 0; i < 64; i++){
+                chooseEndPosition();
+                if(field.validMove(getChosenEND(), getChosenPiece())){
+                    return getChosenPiece();
+                }
+            }
+        }else {
+            choosePiece();
+            calculatePiece(field);
+        }
+        return null;
     }
 
     public ArrayList<ChessPiece> getPossiblePieces() {

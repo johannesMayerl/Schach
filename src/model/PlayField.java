@@ -476,8 +476,6 @@ public class PlayField {
         actPosition[5][0] = new Bishop(false, "f8", false);
         actPosition[3][0] = new Queen(false, "d8", false);
         actPosition[4][0] = new King(false, "e8", false);
-
-
         actPosition[0][6] = new Pawn(true, "a2", false);
         actPosition[1][6] = new Pawn(true, "b2", false);
         actPosition[2][6] = new Pawn(true, "c2", false);
@@ -494,6 +492,8 @@ public class PlayField {
         actPosition[5][7] = new Bishop(true, "f1", false);
         actPosition[3][7] = new Queen(true, "d1", false);
         actPosition[4][7] = new King(true, "e1", false);
+
+        //defineStart();
     }
 
     public void move(String position, ChessPiece piece) throws PositionException, FieldException {
@@ -563,8 +563,6 @@ public class PlayField {
                 changePiece.setColour(true);
             }
         }
-
-
     }
     //als condition für pawnChange
     public boolean pawnChangeCondition(String end) throws PositionException {
@@ -580,6 +578,7 @@ public class PlayField {
         int xRook;
         int xKing;
         int yCommon = pos.yValue(r.getActPos());
+
         if(k.getColour() == r.getColour()) {
             if (!k.getMovedOnce() && !r.getMovedOnce()) {
                 if (k instanceof King && r instanceof Rook) {
@@ -588,20 +587,24 @@ public class PlayField {
 
                     if(xRook == 7){
                         actPosition[xRook-2][yCommon] = r;
+                        r.setActPos(pos.fromINTtoString(xRook-2, yCommon));
                         r.setMovedOnce(true);
                         actPosition[xRook][yCommon] = null;
 
                         actPosition[xKing+2][yCommon] = k;
+                        k.setActPos(pos.fromINTtoString(xKing+2, yCommon));
                         k.setMovedOnce(true);
                         actPosition[xKing][yCommon] = null;
                         return true;
                     }else if(xRook == 0){
                         actPosition[xRook+3][yCommon] = r;
                         r.setMovedOnce(true);
+                        r.setActPos(pos.fromINTtoString(xRook+3, yCommon));
                         actPosition[xRook][yCommon] = null;
 
                         actPosition[xKing-2][yCommon] = k;
                         k.setMovedOnce(true);
+                        k.setActPos(pos.fromINTtoString(xKing-2, yCommon));
                         actPosition[xKing][yCommon] = null;
                         return true;
                     }else{
@@ -614,25 +617,28 @@ public class PlayField {
                     if(xRook == 7){
                         actPosition[xRook-2][yCommon] = k;
                         k.setMovedOnce(true);
+                        k.setActPos(pos.fromINTtoString(xRook-2, yCommon));
                         actPosition[xRook][yCommon] = null;
 
                         actPosition[xKing+2][yCommon] = r;
+                        r.setActPos(pos.fromINTtoString(xKing+2, yCommon));
                         r.setMovedOnce(true);
                         actPosition[xKing][yCommon] = null;
                         return true;
                     }else if(xRook == 0){
                         actPosition[xRook+3][yCommon] = k;
+                        k.setActPos(pos.fromINTtoString(xRook+3,yCommon));
                         k.setMovedOnce(true);
                         actPosition[xRook][yCommon] = null;
 
                         actPosition[xKing-2][yCommon] = r;
+                        r.setActPos(pos.fromINTtoString(xKing-2, yCommon));
                         r.setMovedOnce(true);
                         actPosition[xKing][yCommon] = null;
                         return true;
                     }else{
                         return false;
                     }
-
                 }else return false;
             }else return false;
         }else return false;
@@ -649,7 +655,6 @@ public class PlayField {
             }
         }
     }
-
 
     public void gameOver(boolean b){
         getCg().getMg().gameOver(b);

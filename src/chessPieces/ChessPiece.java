@@ -12,6 +12,7 @@ import model.Position;
 
 public abstract class ChessPiece {
 
+    private String start;
     private boolean colour;
     private boolean movedOnce;
     private String name;
@@ -62,6 +63,14 @@ public abstract class ChessPiece {
         this.name = name;
     }
 
+    /*public String getStart() {
+        return start;
+    }
+
+    public void setStart(String start) {
+        this.start = start;
+    }
+*/
     @Override
     public String toString() {
         return "ChessPiece{" + "colour=" + colour + ", actPosition='" + actPosition + '\'' + '}';

@@ -170,6 +170,12 @@ public class PlayField {
                         case "Rook":
                             if (xStart == xEnd || yStart == yEnd) {
                                 if (getPiece(xEnd, yEnd) != null) {
+
+                                    if((piece instanceof King && actPosition[xEnd][yEnd] instanceof Rook && piece.getColour() == actPosition[xEnd][yEnd].getColour()) ||
+                                            (piece instanceof Rook && actPosition[xEnd][yEnd] instanceof King && piece.getColour() == actPosition[xEnd][yEnd].getColour() )){
+                                        return true;
+                                    }
+
                                     if (getPiece(xEnd, yEnd).getColour() != piece.getColour()) {
                                         if(checkSpots(piece.getActPos(), end)){
                                             return true;
@@ -265,6 +271,11 @@ public class PlayField {
                                 }
                             }
                         case "King":
+                            if((piece instanceof King && actPosition[xEnd][yEnd] instanceof Rook && piece.getColour() == actPosition[xEnd][yEnd].getColour()) ||
+                                    (piece instanceof Rook && actPosition[xEnd][yEnd] instanceof King && piece.getColour() == actPosition[xEnd][yEnd].getColour() )){
+                               return true;
+                            }
+
                             if (xStart == xEnd) {
                                 if (yEnd + 1 == yStart) {
                                     if (getPiece(xEnd, yEnd) != null) {
@@ -373,6 +384,7 @@ public class PlayField {
         int yStart = pos.yValue(start);
         int xEnd = pos.xValue(end);
         int yEnd = pos.yValue(end);
+
 
         if (!(xEnd - xStart == 1 || xEnd - xStart == -1 && yEnd - yStart == -1 || yEnd - yStart == 1)) {
             if (xStart == xEnd && yStart > yEnd) {
@@ -497,19 +509,30 @@ public class PlayField {
     }
 
     public void move(String position, ChessPiece piece) throws PositionException, FieldException {
+        CHECK:
         if (piece != null) {
             if (position != null) {
                 int xEnd = pos.xValue(position);
                 int yEnd = pos.yValue(position);
 
-                if( actPosition[xEnd][yEnd] instanceof King){
+                //game Over situation
+                if( actPosition[xEnd][yEnd] instanceof King && piece.getColour() != actPosition[xEnd][yEnd].getColour()){
                     System.out.println("Game Over");
                     if(actPosition[xEnd][yEnd].getColour()) {
                         gameOver(true);
                     }else{
                         gameOver(false);
                     }
+                    break CHECK;
                 }
+
+                if((piece instanceof King && actPosition[xEnd][yEnd] instanceof Rook && piece.getColour() == actPosition[xEnd][yEnd].getColour()) ||
+                        (piece instanceof Rook && actPosition[xEnd][yEnd] instanceof King && piece.getColour() == actPosition[xEnd][yEnd].getColour() )){
+                    rochade(piece, actPosition[xEnd][yEnd]);
+                    setColorChange(!getColorChange());
+                    break CHECK;
+                }
+
 
                 actPosition[pos.xValue(piece.getActPos())][pos.yValue(piece.getActPos())] = null;
                 actPosition[xEnd][yEnd] = piece;
@@ -564,6 +587,7 @@ public class PlayField {
             }
         }
     }
+
     //als condition für pawnChange
     public boolean pawnChangeCondition(String end) throws PositionException {
         int yEnd = pos.yValue(end);
@@ -573,7 +597,6 @@ public class PlayField {
         }else return false;
     }
 
-    //noch einbaun
     public boolean rochade(ChessPiece k, ChessPiece r) throws PositionException, FieldException {
         int xRook;
         int xKing;

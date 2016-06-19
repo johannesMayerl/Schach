@@ -41,17 +41,7 @@ public class MainGameListeners implements ActionListener, MouseListener {
 		}else
 		if(source == panel.getSave()){
 			System.out.println("Save BTN pressed!");
-			SaveLoad sl = new SaveLoad(panel.getGame(),panel);
-			try {
-				sl.save(panel.getSaveName().getText());
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			} catch (FieldException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-			panel.getSaveName().setText(null);
+			panel.getFrame().getSaveDialog().setVisible(true);
 		}
 	}
 

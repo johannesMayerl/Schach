@@ -1,17 +1,12 @@
 package viewcontrol;
 
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-import java.awt.Rectangle;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.io.File;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.FloatControl;
-import javax.swing.JFrame;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.*;
 
 import model.BridgeFromFrontEndToBackEnd;
 
@@ -20,18 +15,29 @@ public class Frame extends JFrame {
 	private BridgeFromFrontEndToBackEnd bridge;
 
 	// reference to the frame itself
-	private Frame thisSimpleFrame;
+	private Frame frame;
 
 	private MainMenu panel1;
 	private Archive panel2;
 	private Settings panel3;
 	private MainGame panel4;
+	JPanel glass;
+	SavePopup saveDialog;
 
 	private boolean musicPlays;
 	private Clip clip;
 	private FloatControl gainControl;
 
 	public Frame() throws UnsupportedLookAndFeelException {
+		frame = this;
+		glass = (JPanel) frame.getGlassPane();
+
+		glass.setVisible(true);
+		glass.setLayout(new GridBagLayout());
+		saveDialog = new SavePopup(this);
+		saveDialog.setVisible(false);
+		glass.add(saveDialog);
+
 
 		bridge = new BridgeFromFrontEndToBackEnd(this);
 
@@ -40,17 +46,14 @@ public class Frame extends JFrame {
 		try {
 			Thread.sleep(300);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		thisSimpleFrame = this;
 
 		UIManager.setLookAndFeel(new javax.swing.plaf.metal.MetalLookAndFeel());
 
 		setTitle("Chess");
 
-		thisSimpleFrame.setUndecorated(true);
+		frame.setUndecorated(true);
 
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		int width = (int) screenSize.getWidth();
@@ -66,10 +69,10 @@ public class Frame extends JFrame {
 		panel3 = new Settings("textures/Background/2015_16_Semesterprojekt_POS_MainMenu_Background.png", this);
 
 
-		add(panel1);
-		add(panel2);
-		add(panel3);
-		add(panel4);
+		this.getContentPane().add(panel1);
+		this.getContentPane().add(panel2);
+		this.getContentPane().add(panel3);
+		this.getContentPane().add(panel4);
 
 		panel2.setVisible(false);
 		panel3.setVisible(false);
@@ -89,11 +92,11 @@ public class Frame extends JFrame {
 	}
 
 	public Frame getThisSimpleFrame() {
-		return thisSimpleFrame;
+		return frame;
 	}
 
 	public void setThisSimpleFrame(Frame thisSimpleFrame) {
-		this.thisSimpleFrame = thisSimpleFrame;
+		this.frame = thisSimpleFrame;
 	}
 
 	public MainMenu getPanel1() {
@@ -218,5 +221,32 @@ public class Frame extends JFrame {
 		clip.start();
 	}
 
+	public Frame getFrame() {
+		return frame;
+	}
 
+	public void setFrame(Frame frame) {
+		this.frame = frame;
+	}
+
+	public SavePopup getSaveDialog() {
+		return saveDialog;
+	}
+
+	public void setSaveDialog(SavePopup saveDialog) {
+		this.saveDialog = saveDialog;
+	}
+
+	public JPanel getGlass() {
+		return glass;
+	}
+
+	public void setGlass(JPanel glass) {
+		this.glass = glass;
+	}
+
+	public void gameOver(String message){
+		getGlass().add(new GameOverPopup(this, message));
+		repaint();
+	}
 }

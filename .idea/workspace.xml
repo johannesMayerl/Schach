@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc45bfd-db02-4e54-85d3-01d41388f515" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/viewcontrol/GameOverPopup.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/Frame.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/Frame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" afterPath="$PROJECT_DIR$/bin/viewcontrol/MainGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/PlayField.java" afterPath="$PROJECT_DIR$/src/model/PlayField.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/viewcontrol/Frame.java" afterPath="$PROJECT_DIR$/src/viewcontrol/Frame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/viewcontrol/MainGame.java" afterPath="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
     </list>
     <ignored path="Project_2015-16_POS.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,79 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="SavePopup.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewcontrol/SavePopup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1612#1613#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#2727#2728#0" expanded="true" />
-                <element signature="e#2754#2755#0" expanded="true" />
-                <element signature="e#2798#2799#0" expanded="true" />
-                <element signature="e#2830#2831#0" expanded="true" />
-                <element signature="e#2865#2866#0" expanded="true" />
-                <element signature="e#2892#2893#0" expanded="true" />
-                <element signature="e#2936#2937#0" expanded="true" />
-                <element signature="e#2968#2969#0" expanded="true" />
-                <element signature="e#3004#3005#0" expanded="true" />
-                <element signature="e#3032#3033#0" expanded="true" />
-                <element signature="e#3078#3079#0" expanded="true" />
-                <element signature="e#3112#3113#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SaveLoad.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/SaveLoad.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainGame.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="366" column="9" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Archive.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewcontrol/Archive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="230" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameOverPopup.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/viewcontrol/GameOverPopup.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5978879">
-              <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Frame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/viewcontrol/Frame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="248" column="47" selection-start-line="248" selection-start-column="47" selection-end-line="248" selection-end-column="47" />
+              <caret line="249" column="16" selection-start-line="249" selection-start-column="16" selection-end-line="249" selection-end-column="16" />
               <folding>
                 <element signature="method#toggleMainGame#0;class#Frame#0" expanded="false" />
                 <element signature="method#toggleArchive#0;class#Frame#0" expanded="false" />
@@ -119,9 +51,40 @@
                 <element signature="e#5235#5236#0" expanded="true" />
                 <element signature="e#5274#5275#0" expanded="true" />
                 <element signature="e#5299#5300#0" expanded="true" />
-                <element signature="e#5339#5340#0" expanded="true" />
-                <element signature="e#5394#5395#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayField.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.3241267">
+              <caret line="531" column="54" selection-start-line="531" selection-start-column="54" selection-end-line="531" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackButton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontrol/BackButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="e#1335#1336#0" expanded="true" />
+                <element signature="e#1363#1364#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameOverPopup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/viewcontrol/GameOverPopup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+              <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,7 +143,6 @@
         <option value="$PROJECT_DIR$/src/chessPieces/Queen.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/Rook.java" />
         <option value="$PROJECT_DIR$/src/chessPieces/ChessPiece.java" />
-        <option value="$PROJECT_DIR$/src/model/PlayField.java" />
         <option value="$PROJECT_DIR$/src/model/Bot.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/TEst.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/GlassExample.java" />
@@ -188,8 +150,9 @@
         <option value="$PROJECT_DIR$/src/viewcontrol/SavePopup.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/Archive.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/MainGame.java" />
-        <option value="$PROJECT_DIR$/src/viewcontrol/Frame.java" />
         <option value="$PROJECT_DIR$/src/viewcontrol/GameOverPopup.java" />
+        <option value="$PROJECT_DIR$/src/viewcontrol/Frame.java" />
+        <option value="$PROJECT_DIR$/src/model/PlayField.java" />
       </list>
     </option>
   </component>
@@ -812,13 +775,7 @@
       <workItem from="1466250591246" duration="30000" />
       <workItem from="1466250632300" duration="29000" />
       <workItem from="1466263969079" duration="2778000" />
-      <workItem from="1466328129245" duration="5088000" />
-    </task>
-    <task id="LOCAL-00006" summary="Field works">
-      <created>1465811143782</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1465811143782</updated>
+      <workItem from="1466328129245" duration="7463000" />
     </task>
     <task id="LOCAL-00007" summary="Field works">
       <created>1465812744776</created>
@@ -1108,11 +1065,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466332711769</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Missing:&#10;-implement rochade + pawn-special // working on that&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;- New Save Popup&#10;- New Game Over Popup">
+      <created>1466333354544</created>
+      <option name="number" value="00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1466333354545</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92701000" />
+    <option name="totallyTimeSpent" value="95076000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1129,13 +1092,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06659142" sideWeight="0.49785408" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27301422" sideWeight="0.48932293" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27301422" sideWeight="0.48828125" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930037" sideWeight="0.36927083" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930037" sideWeight="0.37057292" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="277" y="93" width="3666" height="1906" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4806867" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930037" sideWeight="0.63072914" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930037" sideWeight="0.6294271" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1177,7 +1140,8 @@
     <MESSAGE value="Missing:&#10;-implement rochade + pawn-special&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;-Bot" />
     <MESSAGE value="Missing:&#10;-implement rochade + pawn-special // working on that&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;-New Pop up for Save" />
     <MESSAGE value="Missing:&#10;-implement rochade + pawn-special // working on that&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;- New Pop up for Save" />
-    <option name="LAST_COMMIT_MESSAGE" value="Missing:&#10;-implement rochade + pawn-special // working on that&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;- New Pop up for Save" />
+    <MESSAGE value="Missing:&#10;-implement rochade + pawn-special // working on that&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;- New Save Popup&#10;- New Game Over Popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Missing:&#10;-implement rochade + pawn-special // working on that&#10;&#10;Completed:&#10;-save and load&#10;&#10;Added:&#10;- New Save Popup&#10;- New Game Over Popup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1648,13 +1612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/BackButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/ArchiveListeners.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1794,27 +1751,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.3054428">
-          <caret line="651" column="0" selection-start-line="651" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6969943">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java">
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+        <state vertical-scroll-proportion="2.5718927">
+          <caret line="102" column="32" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#13147#13148#0" expanded="true" />
+            <element signature="e#13179#13180#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/SavePopup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.54427296">
           <caret line="74" column="8" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1838,16 +1797,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/SaveLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.34849715">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70511776">
+          <caret line="366" column="9" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/Archive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="5.495532">
           <caret line="230" column="20" selection-start-line="230" selection-start-column="20" selection-end-line="230" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/BackButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="e#1335#1336#0" expanded="true" />
+            <element signature="e#1363#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGameListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewcontrol/GameOverPopup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1855,7 +1853,7 @@
     <entry file="file://$PROJECT_DIR$/src/viewcontrol/Frame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="248" column="47" selection-start-line="248" selection-start-column="47" selection-end-line="248" selection-end-column="47" />
+          <caret line="249" column="16" selection-start-line="249" selection-start-column="16" selection-end-line="249" selection-end-column="16" />
           <folding>
             <element signature="method#toggleMainGame#0;class#Frame#0" expanded="false" />
             <element signature="method#toggleArchive#0;class#Frame#0" expanded="false" />
@@ -1873,46 +1871,14 @@
             <element signature="e#5235#5236#0" expanded="true" />
             <element signature="e#5274#5275#0" expanded="true" />
             <element signature="e#5299#5300#0" expanded="true" />
-            <element signature="e#5339#5340#0" expanded="true" />
-            <element signature="e#5394#5395#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/awt/event/ActionListener.java">
+    <entry file="file://$PROJECT_DIR$/src/model/PlayField.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6969943">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.5718927">
-          <caret line="102" column="32" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#13147#13148#0" expanded="true" />
-            <element signature="e#13179#13180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/MainGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="366" column="9" selection-start-line="366" selection-start-column="9" selection-end-line="366" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewcontrol/GameOverPopup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5978879">
-          <caret line="39" column="58" selection-start-line="39" selection-start-column="58" selection-end-line="39" selection-end-column="58" />
+        <state vertical-scroll-proportion="-2.3241267">
+          <caret line="531" column="54" selection-start-line="531" selection-start-column="54" selection-end-line="531" selection-end-column="54" />
           <folding />
         </state>
       </provider>

@@ -244,4 +244,8 @@ public class Frame extends JFrame {
 	public void setGlass(JPanel glass) {
 		this.glass = glass;
 	}
+
+	public void gameOver(String message){
+		getGlass().add(new GameOverPopup(this, message));
+	}
 }

@@ -361,12 +361,10 @@ public class MainGame extends JPanel {
 		setGameOver(true);
 
 		if(b){
-			JOptionPane.showMessageDialog(null, "Game Over \nWhite Won");
+			frame.gameOver("Game Over \nWhite Won");
 		}else{
-			JOptionPane.showMessageDialog(null, "Game Over \nBlack Won");
+			frame.gameOver("Game Over \nBlack Won");
 		}
-
-		getFrame().toggleMainGame(false);
 	}
 
 	public Frame getFrame() {

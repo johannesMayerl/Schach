@@ -34,7 +34,7 @@ public class Frame extends JFrame {
 
 		glass.setVisible(true);
 		glass.setLayout(new GridBagLayout());
-		saveDialog = new SavePopup();
+		saveDialog = new SavePopup(this);
 		saveDialog.setVisible(false);
 		glass.add(saveDialog);
 
